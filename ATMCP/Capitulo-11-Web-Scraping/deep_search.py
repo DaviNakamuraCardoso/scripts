@@ -8,7 +8,7 @@ import webbrowser
 
 #Abrindo o site principal
 site = sys.argv[1]
-n = sys.argv[2]
+n = int(sys.argv[2])
 pesquisa_no_site = '+'.join(sys.argv[2:])
 pagina = requests.get('https://google.com/search?q=%s' % site)
 beatiful_site = bs4.BeautifulSoup(pagina.text, features='html.parser')
