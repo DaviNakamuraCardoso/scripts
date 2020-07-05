@@ -16,7 +16,7 @@ time.sleep(1)
 for i in range(500):
     text_area = driver.find_element_by_xpath('//*[@id="main"]/footer/div[1]/div[2]/div/div[2]')
     text_area.click()
-    text_area.send_keys('cerebrinho!')
+    text_area.send_keys('spam!')
     send_button = driver.find_element_by_xpath('//*[@id="main"]/footer/div[1]/div[3]')
     send_button.click()
     time.sleep(.5)
