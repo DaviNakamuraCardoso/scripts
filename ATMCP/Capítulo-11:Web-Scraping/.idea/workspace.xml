@@ -20,7 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d82edef-b570-40ac-8e1a-d46d38e2c193" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Capitulo-11-Web-Scraping/whatsapp.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Capitulo-11-Web-Scraping/whatsapp.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Capitulo-12-Planilhas-de-Excel/openpyxl_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Capitulo-11-Web-Scraping/auto_email.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Capitulo-11-Web-Scraping/auto_email.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Capitulo-11-Web-Scraping/whatsapp_bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Capitulo-11-Web-Scraping/whatsapp_bot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Capítulo-11Web-Scraping.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,7 +57,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$/facebook-friend-graph/facebookFOF.py" />
   </component>
-  <component name="RunManager" selected="Python.whatsapp">
+  <component name="RunManager" selected="Python.openpyxl_test">
     <configuration name="auto_email" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Capítulo-11Web-Scraping" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -71,7 +79,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="mail_sender" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="facebrooklyn" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Capítulo-11Web-Scraping" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -83,7 +91,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../Capitulo-11-Web-Scraping/mail_sender.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../Capitulo-11-Web-Scraping/facebrooklyn.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -92,7 +100,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="selenium_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="form_bot" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Capítulo-11Web-Scraping" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -104,7 +112,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../Capitulo-11-Web-Scraping/selenium_test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../Capitulo-11-Web-Scraping/form_bot.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -113,7 +121,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="service" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="openpyxl_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Capítulo-11Web-Scraping" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -121,11 +129,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$USER_HOME$/.local/lib/python3.8/site-packages/selenium/webdriver/common" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../Capitulo-12-Planilhas-de-Excel" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$USER_HOME$/.local/lib/python3.8/site-packages/selenium/webdriver/common/service.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../Capitulo-12-Planilhas-de-Excel/openpyxl_test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -134,7 +142,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="whatsapp" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="whatsapp_bot" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Capítulo-11Web-Scraping" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -146,7 +154,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../Capitulo-11-Web-Scraping/whatsapp.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../Capitulo-11-Web-Scraping/whatsapp_bot.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -157,11 +165,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.whatsapp" />
-        <item itemvalue="Python.mail_sender" />
+        <item itemvalue="Python.openpyxl_test" />
+        <item itemvalue="Python.whatsapp_bot" />
         <item itemvalue="Python.auto_email" />
-        <item itemvalue="Python.selenium_test" />
-        <item itemvalue="Python.service" />
+        <item itemvalue="Python.facebrooklyn" />
+        <item itemvalue="Python.form_bot" />
       </list>
     </recent_temporary>
   </component>
@@ -196,45 +204,45 @@
     </state>
     <state x="454" y="155" key="FileChooserDialogImpl/0.27.1366.741@0.27.1366.741" timestamp="1593897355423" />
     <state x="502" y="155" width="424" height="491" key="FileChooserDialogImpl/72.27.1294.741@72.27.1294.741" timestamp="1593796790344" />
-    <state width="1343" height="172" key="GridCell.Tab.0.bottom" timestamp="1593973535308">
+    <state width="1343" height="215" key="GridCell.Tab.0.bottom" timestamp="1594003395297">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1343" height="172" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1593973535308" />
+    <state width="1343" height="215" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1594003395297" />
     <state width="1271" height="172" key="GridCell.Tab.0.bottom/72.27.1294.741@72.27.1294.741" timestamp="1593805527341" />
-    <state width="1343" height="172" key="GridCell.Tab.0.center" timestamp="1593973535307">
+    <state width="1343" height="215" key="GridCell.Tab.0.center" timestamp="1594003395297">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1343" height="172" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1593973535307" />
+    <state width="1343" height="215" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1594003395297" />
     <state width="1271" height="172" key="GridCell.Tab.0.center/72.27.1294.741@72.27.1294.741" timestamp="1593805527341" />
-    <state width="1343" height="172" key="GridCell.Tab.0.left" timestamp="1593973535307">
+    <state width="1343" height="215" key="GridCell.Tab.0.left" timestamp="1594003395296">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1343" height="172" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1593973535307" />
+    <state width="1343" height="215" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1594003395296" />
     <state width="1271" height="172" key="GridCell.Tab.0.left/72.27.1294.741@72.27.1294.741" timestamp="1593805527340" />
-    <state width="1343" height="172" key="GridCell.Tab.0.right" timestamp="1593973535308">
+    <state width="1343" height="215" key="GridCell.Tab.0.right" timestamp="1594003395297">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1343" height="172" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1593973535308" />
+    <state width="1343" height="215" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1594003395297" />
     <state width="1271" height="172" key="GridCell.Tab.0.right/72.27.1294.741@72.27.1294.741" timestamp="1593805527341" />
-    <state width="1343" height="215" key="GridCell.Tab.1.bottom" timestamp="1593824358704">
+    <state width="1343" height="215" key="GridCell.Tab.1.bottom" timestamp="1594003395298">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1343" height="215" key="GridCell.Tab.1.bottom/0.27.1366.741@0.27.1366.741" timestamp="1593824358704" />
+    <state width="1343" height="215" key="GridCell.Tab.1.bottom/0.27.1366.741@0.27.1366.741" timestamp="1594003395298" />
     <state width="1271" height="215" key="GridCell.Tab.1.bottom/72.27.1294.741@72.27.1294.741" timestamp="1593805232330" />
-    <state width="1343" height="215" key="GridCell.Tab.1.center" timestamp="1593824358704">
+    <state width="1343" height="215" key="GridCell.Tab.1.center" timestamp="1594003395297">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1343" height="215" key="GridCell.Tab.1.center/0.27.1366.741@0.27.1366.741" timestamp="1593824358704" />
+    <state width="1343" height="215" key="GridCell.Tab.1.center/0.27.1366.741@0.27.1366.741" timestamp="1594003395297" />
     <state width="1271" height="215" key="GridCell.Tab.1.center/72.27.1294.741@72.27.1294.741" timestamp="1593805232330" />
-    <state width="1343" height="215" key="GridCell.Tab.1.left" timestamp="1593824358704">
+    <state width="1343" height="215" key="GridCell.Tab.1.left" timestamp="1594003395297">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1343" height="215" key="GridCell.Tab.1.left/0.27.1366.741@0.27.1366.741" timestamp="1593824358704" />
+    <state width="1343" height="215" key="GridCell.Tab.1.left/0.27.1366.741@0.27.1366.741" timestamp="1594003395297" />
     <state width="1271" height="215" key="GridCell.Tab.1.left/72.27.1294.741@72.27.1294.741" timestamp="1593805232330" />
-    <state width="1343" height="215" key="GridCell.Tab.1.right" timestamp="1593824358704">
+    <state width="1343" height="215" key="GridCell.Tab.1.right" timestamp="1594003395297">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1343" height="215" key="GridCell.Tab.1.right/0.27.1366.741@0.27.1366.741" timestamp="1593824358704" />
+    <state width="1343" height="215" key="GridCell.Tab.1.right/0.27.1366.741@0.27.1366.741" timestamp="1594003395297" />
     <state width="1271" height="215" key="GridCell.Tab.1.right/72.27.1294.741@72.27.1294.741" timestamp="1593805232330" />
     <state x="454" y="312" width="458" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593974008697">
       <screen x="0" y="27" width="1366" height="741" />
