@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Projeto-ATMCP.iml" filepath="$PROJECT_DIR$/.idea/Projeto-ATMCP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/ATMCP.iml" filepath="$PROJECT_DIR$/.idea/ATMCP.iml" />
     </modules>
   </component>
 </project>
