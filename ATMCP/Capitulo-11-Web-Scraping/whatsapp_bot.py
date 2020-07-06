@@ -18,11 +18,7 @@ search_bt.click()
 search_bt.send_keys(user_name)
 search_bt.send_keys(Keys.ENTER)
 time.sleep(1)
-#user_name = user_name.split()
-#user_name = '&nbsp;&nbsp;'.join(user_name)
-#src = driver.find_element_by_xpath('//*[@id="side"]/div[1]/div/label/div/div[2]')
-#src.send_keys('mae')
-#src.submit()
+
 time.sleep(1)
 for i in range(n):
     text_area = driver.find_element_by_xpath('//*[@id="main"]/footer/div[1]/div[2]/div/div[2]')
