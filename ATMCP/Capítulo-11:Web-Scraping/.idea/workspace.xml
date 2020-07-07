@@ -19,7 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d82edef-b570-40ac-8e1a-d46d38e2c193" name="Default Changelist" comment="" />
+    <list default="true" id="5d82edef-b570-40ac-8e1a-d46d38e2c193" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../C12-Planilhas-Excel/editing_cells_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C12-Planilhas-Excel/redefined_file.xlxs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C12-Planilhas-Excel/sheet_redefine_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../C12-Planilhas-Excel/sheet_redefine_test.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,7 +41,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="ProjectId" id="1eB9Uoj6mm9WWnoZGNZS4lJOR75" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -44,30 +51,9 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/facebook-friend-graph/facebookFOF.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../C12-Planilhas-Excel/sheet_redefine_test.py" />
   </component>
-  <component name="RunManager" selected="Python.sheet_redefine_test">
-    <configuration name="censor_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Capítulo-11Web-Scraping" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../Capitulo-12-Planilhas-de-Excel" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../Capitulo-12-Planilhas-de-Excel/censor_test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.sheet_redefine_test (1)">
     <configuration name="census_2010" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Capítulo-11Web-Scraping" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -110,7 +96,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="openpyxl_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="editing_cells_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Capítulo-11Web-Scraping" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -118,11 +104,32 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../Capitulo-12-Planilhas-de-Excel" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../C12-Planilhas-Excel" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../Capitulo-12-Planilhas-de-Excel/openpyxl_test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../C12-Planilhas-Excel/editing_cells_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="sheet_redefine_test (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Capítulo-11Web-Scraping" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../C12-Planilhas-Excel" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../C12-Planilhas-Excel/sheet_redefine_test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -154,11 +161,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.sheet_redefine_test (1)" />
+        <item itemvalue="Python.editing_cells_test" />
         <item itemvalue="Python.sheet_redefine_test" />
         <item itemvalue="Python.edit_wb_test" />
         <item itemvalue="Python.census_2010" />
-        <item itemvalue="Python.censor_test" />
-        <item itemvalue="Python.openpyxl_test" />
       </list>
     </recent_temporary>
   </component>
@@ -192,30 +199,30 @@
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="353" y="199" width="649" height="403" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1366.741@0.27.1366.741" timestamp="1594047825776" />
-    <state x="454" y="155" width="424" height="491" key="FileChooserDialogImpl" timestamp="1593897355423">
+    <state x="454" y="155" width="424" height="491" key="FileChooserDialogImpl" timestamp="1594079687023">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="454" y="155" key="FileChooserDialogImpl/0.27.1366.741@0.27.1366.741" timestamp="1593897355423" />
+    <state x="454" y="155" width="424" height="491" key="FileChooserDialogImpl/0.27.1366.741@0.27.1366.741" timestamp="1594079687023" />
     <state x="502" y="155" width="424" height="491" key="FileChooserDialogImpl/72.27.1294.741@72.27.1294.741" timestamp="1593796790344" />
-    <state width="1343" height="172" key="GridCell.Tab.0.bottom" timestamp="1594055502637">
+    <state width="1343" height="172" key="GridCell.Tab.0.bottom" timestamp="1594082768882">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1343" height="172" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1594055502637" />
+    <state width="1343" height="172" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1594082768882" />
     <state width="1271" height="172" key="GridCell.Tab.0.bottom/72.27.1294.741@72.27.1294.741" timestamp="1593805527341" />
-    <state width="1343" height="172" key="GridCell.Tab.0.center" timestamp="1594055502637">
+    <state width="1343" height="172" key="GridCell.Tab.0.center" timestamp="1594082768881">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1343" height="172" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1594055502637" />
+    <state width="1343" height="172" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1594082768881" />
     <state width="1271" height="172" key="GridCell.Tab.0.center/72.27.1294.741@72.27.1294.741" timestamp="1593805527341" />
-    <state width="1343" height="172" key="GridCell.Tab.0.left" timestamp="1594055502637">
+    <state width="1343" height="172" key="GridCell.Tab.0.left" timestamp="1594082768880">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1343" height="172" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1594055502637" />
+    <state width="1343" height="172" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1594082768880" />
     <state width="1271" height="172" key="GridCell.Tab.0.left/72.27.1294.741@72.27.1294.741" timestamp="1593805527340" />
-    <state width="1343" height="172" key="GridCell.Tab.0.right" timestamp="1594055502637">
+    <state width="1343" height="172" key="GridCell.Tab.0.right" timestamp="1594082768881">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1343" height="172" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1594055502637" />
+    <state width="1343" height="172" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1594082768881" />
     <state width="1271" height="172" key="GridCell.Tab.0.right/72.27.1294.741@72.27.1294.741" timestamp="1593805527341" />
     <state width="1343" height="215" key="GridCell.Tab.1.bottom" timestamp="1594055247960">
       <screen x="0" y="27" width="1366" height="741" />
