@@ -4,7 +4,7 @@ from selenium.webdriver.common.keys import Keys
 
 user_name = input('Contato: ')
 mensagem = input('Mensagem: ')
-n = int(input('Número de vezes: '))
+n = int(input('Número de vezes: ')page = requests.get('https://web.whatsapp.com'))
 time.sleep(3)
 options = webdriver.ChromeOptions()
 options.add_argument('--user-data-dir=/home/davi/.config/google-chrome/Default')
@@ -12,7 +12,7 @@ options.add_argument('--profile-directory=Default')
 
 driver = webdriver.Chrome(executable_path='/home/davi/Downloads/chromedriver_linux64/chromedriver', options=options)
 driver.get('https://web.whatsapp.com/')
-time.sleep(12)
+time.sleep(10)
 search_bt = driver.find_element_by_xpath('//*[@id="side"]/div[1]/div/label/div/div[2]')
 search_bt.click()
 search_bt.send_keys(user_name)
