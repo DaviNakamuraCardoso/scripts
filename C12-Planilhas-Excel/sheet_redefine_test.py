@@ -13,7 +13,13 @@ price_updates = {'Garlic': 3.07, 'Celery': 1.19, 'Lemon': 1.27}
 rows = sheet.max_row
 columns = sheet.max_column
 bold_font = Font(bold=True)
-
+new_sheet['A1'] = 'FRUIT'
+new_sheet['B1'] = 'COST PER POND'
+new_sheet['C1'] = 'POUNDS SOLD'
+new_sheet['D1'] = 'TOTAL'
+new_sheet.freeze_panes = 'A2'
+for d in range(1, 4):
+    new_sheet.column_dimensions[openpyxl.utils.get_column_letter(d)].width = 20
 for i in range(2, rows):
     produce_name = sheet.cell(row=i, column=1).value
     print('Lendo linha', str(i) + '...')
@@ -32,5 +38,5 @@ new_sheet['E' + str(rows+1)] = '=SUM(D2:D%s)' % last_row
 total_font = Font(name='Times New Roman', size=15, bold=True, italic=True)
 new_sheet['E' + str(rows+1)].font = total_font
 print('Salvando novo arquivo...')
-new_wb.save('redefined_file.xlxs')
+new_wb.save('redefined_file.xlsx')
 print('Pronto!')
