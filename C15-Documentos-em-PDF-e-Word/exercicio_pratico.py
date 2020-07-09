@@ -1,6 +1,7 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
-import time
+
+
 
 options = webdriver.ChromeOptions()
 options.add_argument('--user-data-dir=/home/davi/.config/google-chrome/Default')

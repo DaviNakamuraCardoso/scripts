@@ -9,12 +9,22 @@ import pyautogui
 import pyperclip
 import re
 import sys
+import datetime
 
-actions = {'reuniao': 'reuniao', 'campo': 'campo desta', 'servico': 'servico'}
+now_date = datetime.datetime.now()
+now = now_date.strftime('%A %H:%M')
+
+while now != 'Thursday 19:15' and now != 'Sunday 8:45':
+    time.sleep(5)
+
+print('Iniciando...')
+action = 'reuniao de hoje'
 senha_re = re.compile(r'(Senha:|Password:)(\s)(.*)', re.IGNORECASE)
+print('Definindo expressões regulares...')
 options = webdriver.ChromeOptions()
 options.add_argument('--user-data-dir=/home/davi/.config/google-chrome/Default')
 options.add_argument('--profile-directory=Default')
+print('Estipulando configurações...')
 driver = webdriver.Chrome(executable_path='/home/davi/Downloads/chromedriver_linux64/chromedriver', options=options)
 driver.get('https://web.whatsapp.com')
 
@@ -30,7 +40,7 @@ search_in_gp = driver.find_element_by_xpath('//*[@id="main"]/header/div[3]/div/d
 search_in_gp.click()
 text_area = driver.find_element_by_xpath('//*[@id="app"]/div/div/div[2]/div[3]/span/div/div/div[1]/div/label')
 text_area.click()
-pyautogui.typewrite(actions[sys.argv[1]])
+pyautogui.typewrite(action)
 time.sleep(5)
 pyautogui.press('enter')
 time.sleep(5)
@@ -56,7 +66,7 @@ pyautogui.press('enter')
 time.sleep(5)
 pyautogui.typewrite(senha)
 pyautogui.press('enter')
-time.sleep(5)
+time.sleep(8)
 pyautogui.click(700, 600, button='left')
 pyautogui.press('tab', presses=3, interval=1)
 pyautogui.press('enter')
