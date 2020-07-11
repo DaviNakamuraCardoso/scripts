@@ -20,3 +20,4 @@ thread_ob = threading.Thread(target=print, args=['Cats', 'Dogs', 'Frogs'], kwarg
 # to a thread object, and the keyword argument sep
 thread_ob.start()
 
+
