@@ -20,30 +20,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d82edef-b570-40ac-8e1a-d46d38e2c193" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../C16-CSV-e-JSON/JSON_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../C16-CSV-e-JSON/json_decode.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../C16-CSV-e-JSON/remove_csv_header.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../C17-Monitorando-Tempo/datetime_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../C17-Monitorando-Tempo/multithreading_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../C17-Monitorando-Tempo/stopwatch.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/CSV_test.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/exercicio_pratico__1_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/header_CSV.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/header_CSV_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/writing_on_CSV.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C17-Monitorando-Tempo/countdown.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C17-Monitorando-Tempo/launching_other_programs.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C17-Monitorando-Tempo/threading_xkcd_download.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C18-Enviando-Emails-e-SMS/IMAP_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C18-Enviando-Emails-e-SMS/SMS_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C18-Enviando-Emails-e-SMS/SMTP_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C18-Enviando-Emails-e-SMS/quickstart.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C18-Enviando-Emails-e-SMS/send_dues.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C18-Enviando-Emails-e-SMS/sending_emails.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C19-Manipulação-de-Imagens/changing_pixels.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C19-Manipulação-de-Imagens/copy_image.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C19-Manipulação-de-Imagens/cropping.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C19-Manipulação-de-Imagens/drawing_on_images.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C19-Manipulação-de-Imagens/image_redef.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C19-Manipulação-de-Imagens/image_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C19-Manipulação-de-Imagens/resize_images.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C19-Manipulação-de-Imagens/rgba_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C19-Manipulação-de-Imagens/writing.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C20-Controle-de-Teclado/mouse_info_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../C12-Web-Scraping/auto_zoom.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../C12-Web-Scraping/auto_zoom.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C13-Planilhas-Excel/censuspopdata.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C13-Planilhas-Excel/edit_text_wb.xlxs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C13-Planilhas-Excel/produceSales.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C13-Planilhas-Excel/redefined_file.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C15-Documentos-em-PDF-e-Word/exercicio_pratico.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../C15-Documentos-em-PDF-e-Word/exercicio_pratico.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C16-CSV-e-JSON/header_CSV.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../C16-CSV-e-JSON/header_CSV.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C12-Web-Scraping/xkcd.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../C12-Web-Scraping/xkcd.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C15-Documentos-em-PDF-e-Word/zophie.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C17-Monitorando-Tempo/multithreading_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../C17-Monitorando-Tempo/multithreading_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C17-Monitorando-Tempo/time_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../C17-Monitorando-Tempo/time_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../automate_online-materials/alarm.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../automate_online-materials/catlogo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../automate_online-materials/duesRecords.xlsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,20 +80,20 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../automate_online-materials" />
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
-  <component name="RunManager" selected="Python.multithreading_test">
-    <configuration name="datetime_test" type="PythonConfigurationType" factoryName="Python" singleton="false" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.mouse_info_test">
+    <configuration name="drawing_on_images" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Capítulo-11Web-Scraping" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="/usr/bin/python3.8" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../C17-Monitorando-Tempo" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../C19-Manipulação-de-Imagens" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../C17-Monitorando-Tempo/datetime_test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../C19-Manipulação-de-Imagens/drawing_on_images.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -98,19 +102,19 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="multithreading_test" type="PythonConfigurationType" factoryName="Python" singleton="false" temporary="true" nameIsGenerated="true">
+    <configuration name="image_redef" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Capítulo-11Web-Scraping" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="/usr/bin/python3.8" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../C17-Monitorando-Tempo" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../C19-Manipulação-de-Imagens" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../C17-Monitorando-Tempo/multithreading_test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../C19-Manipulação-de-Imagens/image_redef.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -119,19 +123,19 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="stopwatch" type="PythonConfigurationType" factoryName="Python" singleton="false" temporary="true" nameIsGenerated="true">
+    <configuration name="mouse_info_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Capítulo-11Web-Scraping" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="/usr/bin/python3.8" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../C17-Monitorando-Tempo" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../C20-Controle-de-Teclado" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../C17-Monitorando-Tempo/stopwatch.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../C20-Controle-de-Teclado/mouse_info_test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -140,19 +144,19 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="time_test" type="PythonConfigurationType" factoryName="Python" singleton="false" temporary="true" nameIsGenerated="true">
+    <configuration name="pyautogui_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Capítulo-11Web-Scraping" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="/usr/bin/python3.8" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../C17-Monitorando-Tempo" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../C20-Controle-de-Teclado" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../C17-Monitorando-Tempo/time_test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../C20-Controle-de-Teclado/pyautogui_test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -161,19 +165,19 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="xl_to_csv" type="PythonConfigurationType" factoryName="Python" singleton="false" temporary="true" nameIsGenerated="true">
+    <configuration name="writing" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Capítulo-11Web-Scraping" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="/usr/bin/python3.8" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../C15-Documentos-em-PDF-e-Word" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../C19-Manipulação-de-Imagens" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../C15-Documentos-em-PDF-e-Word/xl_to_csv.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../C19-Manipulação-de-Imagens/writing.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -184,11 +188,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.multithreading_test" />
-        <item itemvalue="Python.time_test" />
-        <item itemvalue="Python.datetime_test" />
-        <item itemvalue="Python.stopwatch" />
-        <item itemvalue="Python.xl_to_csv" />
+        <item itemvalue="Python.mouse_info_test" />
+        <item itemvalue="Python.pyautogui_test" />
+        <item itemvalue="Python.writing" />
+        <item itemvalue="Python.drawing_on_images" />
+        <item itemvalue="Python.image_redef" />
       </list>
     </recent_temporary>
   </component>
@@ -296,53 +300,53 @@
     <state x="454" y="155" width="424" height="491" key="FileChooserDialogImpl/0.27.1366.741@0.27.1366.741" timestamp="1594173816066" />
     <state x="1552" y="261" key="FileChooserDialogImpl/1024.131.1366.768/0.158.1024.610@1024.131.1366.768" timestamp="1594293417265" />
     <state x="502" y="155" width="424" height="491" key="FileChooserDialogImpl/72.27.1294.741@72.27.1294.741" timestamp="1593796790344" />
-    <state width="1343" height="207" key="GridCell.Tab.0.bottom" timestamp="1594322560001">
+    <state width="1343" height="207" key="GridCell.Tab.0.bottom" timestamp="1594431284869">
       <screen x="1024" y="131" width="1366" height="768" />
     </state>
     <state width="1343" height="172" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1594230695980" />
-    <state width="1343" height="207" key="GridCell.Tab.0.bottom/1024.131.1366.768/0.158.1024.610@1024.131.1366.768" timestamp="1594322560001" />
+    <state width="1343" height="207" key="GridCell.Tab.0.bottom/1024.131.1366.768/0.158.1024.610@1024.131.1366.768" timestamp="1594431284869" />
     <state width="1271" height="172" key="GridCell.Tab.0.bottom/72.27.1294.741@72.27.1294.741" timestamp="1593805527341" />
-    <state width="1343" height="207" key="GridCell.Tab.0.center" timestamp="1594322560000">
+    <state width="1343" height="207" key="GridCell.Tab.0.center" timestamp="1594431284868">
       <screen x="1024" y="131" width="1366" height="768" />
     </state>
     <state width="1343" height="172" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1594230695980" />
-    <state width="1343" height="207" key="GridCell.Tab.0.center/1024.131.1366.768/0.158.1024.610@1024.131.1366.768" timestamp="1594322560000" />
+    <state width="1343" height="207" key="GridCell.Tab.0.center/1024.131.1366.768/0.158.1024.610@1024.131.1366.768" timestamp="1594431284868" />
     <state width="1271" height="172" key="GridCell.Tab.0.center/72.27.1294.741@72.27.1294.741" timestamp="1593805527341" />
-    <state width="1343" height="207" key="GridCell.Tab.0.left" timestamp="1594322560000">
+    <state width="1343" height="207" key="GridCell.Tab.0.left" timestamp="1594431284868">
       <screen x="1024" y="131" width="1366" height="768" />
     </state>
     <state width="1343" height="172" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1594230695980" />
-    <state width="1343" height="207" key="GridCell.Tab.0.left/1024.131.1366.768/0.158.1024.610@1024.131.1366.768" timestamp="1594322560000" />
+    <state width="1343" height="207" key="GridCell.Tab.0.left/1024.131.1366.768/0.158.1024.610@1024.131.1366.768" timestamp="1594431284868" />
     <state width="1271" height="172" key="GridCell.Tab.0.left/72.27.1294.741@72.27.1294.741" timestamp="1593805527340" />
-    <state width="1343" height="207" key="GridCell.Tab.0.right" timestamp="1594322560000">
+    <state width="1343" height="207" key="GridCell.Tab.0.right" timestamp="1594431284868">
       <screen x="1024" y="131" width="1366" height="768" />
     </state>
     <state width="1343" height="172" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1594230695980" />
-    <state width="1343" height="207" key="GridCell.Tab.0.right/1024.131.1366.768/0.158.1024.610@1024.131.1366.768" timestamp="1594322560000" />
+    <state width="1343" height="207" key="GridCell.Tab.0.right/1024.131.1366.768/0.158.1024.610@1024.131.1366.768" timestamp="1594431284868" />
     <state width="1271" height="172" key="GridCell.Tab.0.right/72.27.1294.741@72.27.1294.741" timestamp="1593805527341" />
-    <state width="1343" height="215" key="GridCell.Tab.1.bottom" timestamp="1594295694685">
+    <state width="1343" height="215" key="GridCell.Tab.1.bottom" timestamp="1594420057849">
       <screen x="1024" y="131" width="1366" height="768" />
     </state>
     <state width="1343" height="215" key="GridCell.Tab.1.bottom/0.27.1366.741@0.27.1366.741" timestamp="1594222298618" />
-    <state width="1343" height="215" key="GridCell.Tab.1.bottom/1024.131.1366.768/0.158.1024.610@1024.131.1366.768" timestamp="1594295694685" />
+    <state width="1343" height="215" key="GridCell.Tab.1.bottom/1024.131.1366.768/0.158.1024.610@1024.131.1366.768" timestamp="1594420057849" />
     <state width="1271" height="215" key="GridCell.Tab.1.bottom/72.27.1294.741@72.27.1294.741" timestamp="1593805232330" />
-    <state width="1343" height="215" key="GridCell.Tab.1.center" timestamp="1594295694685">
+    <state width="1343" height="215" key="GridCell.Tab.1.center" timestamp="1594420057849">
       <screen x="1024" y="131" width="1366" height="768" />
     </state>
     <state width="1343" height="215" key="GridCell.Tab.1.center/0.27.1366.741@0.27.1366.741" timestamp="1594222298617" />
-    <state width="1343" height="215" key="GridCell.Tab.1.center/1024.131.1366.768/0.158.1024.610@1024.131.1366.768" timestamp="1594295694685" />
+    <state width="1343" height="215" key="GridCell.Tab.1.center/1024.131.1366.768/0.158.1024.610@1024.131.1366.768" timestamp="1594420057849" />
     <state width="1271" height="215" key="GridCell.Tab.1.center/72.27.1294.741@72.27.1294.741" timestamp="1593805232330" />
-    <state width="1343" height="215" key="GridCell.Tab.1.left" timestamp="1594295694685">
+    <state width="1343" height="215" key="GridCell.Tab.1.left" timestamp="1594420057849">
       <screen x="1024" y="131" width="1366" height="768" />
     </state>
     <state width="1343" height="215" key="GridCell.Tab.1.left/0.27.1366.741@0.27.1366.741" timestamp="1594222298616" />
-    <state width="1343" height="215" key="GridCell.Tab.1.left/1024.131.1366.768/0.158.1024.610@1024.131.1366.768" timestamp="1594295694685" />
+    <state width="1343" height="215" key="GridCell.Tab.1.left/1024.131.1366.768/0.158.1024.610@1024.131.1366.768" timestamp="1594420057849" />
     <state width="1271" height="215" key="GridCell.Tab.1.left/72.27.1294.741@72.27.1294.741" timestamp="1593805232330" />
-    <state width="1343" height="215" key="GridCell.Tab.1.right" timestamp="1594295694685">
+    <state width="1343" height="215" key="GridCell.Tab.1.right" timestamp="1594420057849">
       <screen x="1024" y="131" width="1366" height="768" />
     </state>
     <state width="1343" height="215" key="GridCell.Tab.1.right/0.27.1366.741@0.27.1366.741" timestamp="1594222298618" />
-    <state width="1343" height="215" key="GridCell.Tab.1.right/1024.131.1366.768/0.158.1024.610@1024.131.1366.768" timestamp="1594295694685" />
+    <state width="1343" height="215" key="GridCell.Tab.1.right/1024.131.1366.768/0.158.1024.610@1024.131.1366.768" timestamp="1594420057849" />
     <state width="1271" height="215" key="GridCell.Tab.1.right/72.27.1294.741@72.27.1294.741" timestamp="1593805232330" />
     <state x="1118" y="162" width="1022" height="737" key="SettingsEditor" timestamp="1594299683612">
       <screen x="1024" y="131" width="1366" height="768" />
@@ -352,10 +356,11 @@
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state width="683" height="370" key="XDebugger.FullValuePopup/0.27.1366.741@0.27.1366.741" timestamp="1594124866224" />
-    <state x="454" y="312" width="458" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593974008697">
-      <screen x="0" y="27" width="1366" height="741" />
+    <state x="1478" y="426" width="458" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1594426777815">
+      <screen x="1024" y="131" width="1366" height="768" />
     </state>
     <state x="454" y="312" width="458" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.27.1366.741@0.27.1366.741" timestamp="1593974008697" />
+    <state x="1478" y="426" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1024.131.1366.768/0.158.1024.610@1024.131.1366.768" timestamp="1594426777815" />
     <state x="1351" y="195" width="672" height="703" key="search.everywhere.popup" timestamp="1594304963168">
       <screen x="1024" y="131" width="1366" height="768" />
     </state>

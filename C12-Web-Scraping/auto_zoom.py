@@ -14,7 +14,7 @@ import datetime
 now_date = datetime.datetime.now()
 now = now_date.strftime('%A %H:%M')
 
-while now != 'Thursday 19:15' and now != 'Sunday 8:45':
+while now != 'Thursday 19:23' and now != 'Sunday 8:45':
     time.sleep(5)
 
 print('Iniciando...')
