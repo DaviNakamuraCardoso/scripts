@@ -20,34 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d82edef-b570-40ac-8e1a-d46d38e2c193" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../C17-Monitorando-Tempo/countdown.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../C17-Monitorando-Tempo/launching_other_programs.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../C17-Monitorando-Tempo/threading_xkcd_download.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../C18-Enviando-Emails-e-SMS/IMAP_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../C18-Enviando-Emails-e-SMS/SMS_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../C18-Enviando-Emails-e-SMS/SMTP_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../C18-Enviando-Emails-e-SMS/quickstart.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../C18-Enviando-Emails-e-SMS/send_dues.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../C18-Enviando-Emails-e-SMS/sending_emails.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../C19-Manipulação-de-Imagens/changing_pixels.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../C19-Manipulação-de-Imagens/copy_image.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../C19-Manipulação-de-Imagens/cropping.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../C19-Manipulação-de-Imagens/drawing_on_images.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../C19-Manipulação-de-Imagens/image_redef.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../C19-Manipulação-de-Imagens/image_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../C19-Manipulação-de-Imagens/resize_images.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../C19-Manipulação-de-Imagens/rgba_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../C19-Manipulação-de-Imagens/writing.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../C20-Controle-de-Teclado/mouse_info_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C20-Controle-de-Teclado/controle_de_teclado.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C12-Web-Scraping/auto_zoom.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../C12-Web-Scraping/auto_zoom.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C12-Web-Scraping/xkcd.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../C12-Web-Scraping/xkcd.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C15-Documentos-em-PDF-e-Word/zophie.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C17-Monitorando-Tempo/multithreading_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../C17-Monitorando-Tempo/multithreading_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C17-Monitorando-Tempo/time_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../C17-Monitorando-Tempo/time_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../automate_online-materials/alarm.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../automate_online-materials/catlogo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../automate_online-materials/duesRecords.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C20-Controle-de-Teclado/mouse_info_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../C20-Controle-de-Teclado/mouse_info_test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +55,28 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../automate_online-materials" />
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
-  <component name="RunManager" selected="Python.mouse_info_test">
+  <component name="RunManager" selected="Python.controle_de_teclado">
+    <configuration name="controle_de_teclado" type="PythonConfigurationType" factoryName="Python" singleton="false" temporary="true" nameIsGenerated="true">
+      <module name="Capítulo-11Web-Scraping" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/bin/python3.8" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../C20-Controle-de-Teclado" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../C20-Controle-de-Teclado/controle_de_teclado.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="drawing_on_images" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Capítulo-11Web-Scraping" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -102,35 +98,14 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="image_redef" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="mouse_info_test" type="PythonConfigurationType" factoryName="Python" singleton="false" temporary="true" nameIsGenerated="true">
       <module name="Capítulo-11Web-Scraping" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../C19-Manipulação-de-Imagens" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../C19-Manipulação-de-Imagens/image_redef.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="mouse_info_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Capítulo-11Web-Scraping" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="/usr/bin/python3.8" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../C20-Controle-de-Teclado" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -188,11 +163,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.controle_de_teclado" />
         <item itemvalue="Python.mouse_info_test" />
         <item itemvalue="Python.pyautogui_test" />
         <item itemvalue="Python.writing" />
         <item itemvalue="Python.drawing_on_images" />
-        <item itemvalue="Python.image_redef" />
       </list>
     </recent_temporary>
   </component>
@@ -242,10 +217,18 @@
       <screen x="1024" y="131" width="1366" height="768" />
     </state>
     <state x="1024" y="158" width="666" height="741" key="#JSON_weather/1024.131.1366.768/0.158.1024.610@1024.131.1366.768" timestamp="1594299486249" />
+    <state x="1024" y="186" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594435720514">
+      <screen x="1024" y="131" width="1366" height="768" />
+    </state>
+    <state x="1024" y="186" key="#com.intellij.execution.impl.EditConfigurationsDialog/1024.131.1366.768/0.158.1024.610@1024.131.1366.768" timestamp="1594435720514" />
     <state x="353" y="199" width="649" height="403" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1594141958348">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="353" y="199" width="649" height="403" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1366.741@0.27.1366.741" timestamp="1594141958348" />
+    <state x="1024" y="158" width="666" height="741" key="#controle_de_teclado" timestamp="1594434813498">
+      <screen x="1024" y="131" width="1366" height="768" />
+    </state>
+    <state x="1024" y="158" width="666" height="741" key="#controle_de_teclado/1024.131.1366.768/0.158.1024.610@1024.131.1366.768" timestamp="1594434813498" />
     <state x="1024" y="158" width="666" height="741" key="#datetime_test" timestamp="1594315071520">
       <screen x="1024" y="131" width="1366" height="768" />
     </state>
@@ -270,6 +253,10 @@
       <screen x="1024" y="131" width="1366" height="768" />
     </state>
     <state x="1024" y="158" width="666" height="741" key="#json_decode/1024.131.1366.768/0.158.1024.610@1024.131.1366.768" timestamp="1594304552184" />
+    <state x="1024" y="158" width="666" height="741" key="#mouse_info_test" timestamp="1594433854673">
+      <screen x="1024" y="131" width="1366" height="768" />
+    </state>
+    <state x="1024" y="158" width="666" height="741" key="#mouse_info_test/1024.131.1366.768/0.158.1024.610@1024.131.1366.768" timestamp="1594433854673" />
     <state x="1024" y="158" width="666" height="741" key="#multithreading_test" timestamp="1594320291279">
       <screen x="1024" y="131" width="1366" height="768" />
     </state>
@@ -300,29 +287,29 @@
     <state x="454" y="155" width="424" height="491" key="FileChooserDialogImpl/0.27.1366.741@0.27.1366.741" timestamp="1594173816066" />
     <state x="1552" y="261" key="FileChooserDialogImpl/1024.131.1366.768/0.158.1024.610@1024.131.1366.768" timestamp="1594293417265" />
     <state x="502" y="155" width="424" height="491" key="FileChooserDialogImpl/72.27.1294.741@72.27.1294.741" timestamp="1593796790344" />
-    <state width="1343" height="207" key="GridCell.Tab.0.bottom" timestamp="1594431284869">
+    <state width="1343" height="207" key="GridCell.Tab.0.bottom" timestamp="1594435674705">
       <screen x="1024" y="131" width="1366" height="768" />
     </state>
     <state width="1343" height="172" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1594230695980" />
-    <state width="1343" height="207" key="GridCell.Tab.0.bottom/1024.131.1366.768/0.158.1024.610@1024.131.1366.768" timestamp="1594431284869" />
+    <state width="1343" height="207" key="GridCell.Tab.0.bottom/1024.131.1366.768/0.158.1024.610@1024.131.1366.768" timestamp="1594435674705" />
     <state width="1271" height="172" key="GridCell.Tab.0.bottom/72.27.1294.741@72.27.1294.741" timestamp="1593805527341" />
-    <state width="1343" height="207" key="GridCell.Tab.0.center" timestamp="1594431284868">
+    <state width="1343" height="207" key="GridCell.Tab.0.center" timestamp="1594435674705">
       <screen x="1024" y="131" width="1366" height="768" />
     </state>
     <state width="1343" height="172" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1594230695980" />
-    <state width="1343" height="207" key="GridCell.Tab.0.center/1024.131.1366.768/0.158.1024.610@1024.131.1366.768" timestamp="1594431284868" />
+    <state width="1343" height="207" key="GridCell.Tab.0.center/1024.131.1366.768/0.158.1024.610@1024.131.1366.768" timestamp="1594435674705" />
     <state width="1271" height="172" key="GridCell.Tab.0.center/72.27.1294.741@72.27.1294.741" timestamp="1593805527341" />
-    <state width="1343" height="207" key="GridCell.Tab.0.left" timestamp="1594431284868">
+    <state width="1343" height="207" key="GridCell.Tab.0.left" timestamp="1594435674705">
       <screen x="1024" y="131" width="1366" height="768" />
     </state>
     <state width="1343" height="172" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1594230695980" />
-    <state width="1343" height="207" key="GridCell.Tab.0.left/1024.131.1366.768/0.158.1024.610@1024.131.1366.768" timestamp="1594431284868" />
+    <state width="1343" height="207" key="GridCell.Tab.0.left/1024.131.1366.768/0.158.1024.610@1024.131.1366.768" timestamp="1594435674705" />
     <state width="1271" height="172" key="GridCell.Tab.0.left/72.27.1294.741@72.27.1294.741" timestamp="1593805527340" />
-    <state width="1343" height="207" key="GridCell.Tab.0.right" timestamp="1594431284868">
+    <state width="1343" height="207" key="GridCell.Tab.0.right" timestamp="1594435674705">
       <screen x="1024" y="131" width="1366" height="768" />
     </state>
     <state width="1343" height="172" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1594230695980" />
-    <state width="1343" height="207" key="GridCell.Tab.0.right/1024.131.1366.768/0.158.1024.610@1024.131.1366.768" timestamp="1594431284868" />
+    <state width="1343" height="207" key="GridCell.Tab.0.right/1024.131.1366.768/0.158.1024.610@1024.131.1366.768" timestamp="1594435674705" />
     <state width="1271" height="172" key="GridCell.Tab.0.right/72.27.1294.741@72.27.1294.741" timestamp="1593805527341" />
     <state width="1343" height="215" key="GridCell.Tab.1.bottom" timestamp="1594420057849">
       <screen x="1024" y="131" width="1366" height="768" />
