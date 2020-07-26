@@ -2,8 +2,8 @@ from requestium import Session, Keys
 import time
 
 
-password = 'F22raptor'
-email = 'meladopurso'
+password = input("Senha: ")
+email = input("Email: ")
 session = Session(webdriver_path='/home/davi/Downloads/chromedriver_linux64/chromedriver', browser='chrome')
 session.driver.get('http://facebook.com')
 email_area = session.driver.find_element_by_id('email')
