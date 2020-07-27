@@ -1,9 +1,13 @@
 import ezgmail
 import os
+import random
+import openpyxl
+
 
 os.makedirs('Revelation', exist_ok=True)
 
-#ezgmail.send('davinakamuracardoso@gmail.com', 'Teste', 'TESTANDO') # Once with the .json token, it's easy to send emails
+#ezgmail.send('davinakamuracardoso@gmail.com', 'Teste', 'TESTANDO')
+# Once with the .json token, it's easy to send emails
 # using the ezgmail
 #ezgmail.send('gabinakacardoso@gmail.com', 'IIIIIIIIUUUUUU', 'IUIUIUIUIUIU', ['/home/davi/Downloads/melado.jpg',
                                            #                                  '/home/davi/Downloads/melado_fundo.jpg'])
@@ -11,8 +15,10 @@ os.makedirs('Revelation', exist_ok=True)
 # with .zip or .exe extensions
 
 # It's possible to add cc and bcc keyword arguments to your message
-#ezgmail.send('rogerioferrantecardoso@gmail.com', 'TESTE', 'TESTANDO ENVIO DE EMAILS', cc='gabinakacardoso@gmail.com',
- #            bcc='davinakamuracardoso@gmail.com')
+subjects = list(range(0, 100))
+
+ezgmail.send('rogerioferrantecardoso@gmail.com', 'TESTE', 'TESTANDO ENVIO DE EMAILS', cc='gabinakacardoso@gmail.com',
+            bcc='davinakamuracardoso@gmail.com')
 
 # If you want to remember your token's gmail address:
 ezgmail.init()
@@ -50,6 +56,6 @@ print(ezgmail.summary(result_threads))
 # Downloading attachments from a email account
 
 threads = ezgmail.search('Revelation')
-threads[0].messages[0].attachments
+threads_01 = threads[0].messages[0].attachments
 threads[0].messages[0].downloadAllAttachments(downloadFolder='Revelation')
 

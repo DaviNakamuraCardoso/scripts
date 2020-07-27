@@ -4,7 +4,7 @@ import ezgmail
 
 ss = openpyxl.load_workbook('paiments.xlsx')
 sheet = ss.active
-for i in range(2, sheet.max_row+1): 
+for i in range(2, sheet.max_row+1):
     months_not_paid = []
     name = sheet['A' + str(i)].value
     email = sheet['B' + str(i)].value

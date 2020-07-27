@@ -20,9 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d82edef-b570-40ac-8e1a-d46d38e2c193" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../C18-Enviando-Emails-e-SMS/sheets_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../C18-Enviando-Emails-e-SMS/sending_emails.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../C18-Enviando-Emails-e-SMS/sending_emails.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C18-Enviando-Emails-e-SMS/sheets_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../C18-Enviando-Emails-e-SMS/sheets_test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
