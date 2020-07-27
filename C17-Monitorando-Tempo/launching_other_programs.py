@@ -4,10 +4,12 @@ import subprocess
 
 print(datetime.datetime.now().strftime('%A, %H:%M'))
 # You can lauch other programs with the Popen() function
-calc_open = subprocess.Popen('/usr/bin/gnome-calculator')
-print(calc_open.poll())
-print(calc_open.wait()) # Doesn't return until calc closes
-print(calc_open.poll())
+while True:
+    calc_open = subprocess.Popen('/usr/bin/gnome-calculator')
+    calc_open.wait()
+#print(calc_open.poll())
+ # Doesn't return until calc closes
+#print(calc_open.poll())
 
 #cmd_line_arg = subprocess.Popen(['/bin/python3',
                               #   '/home/davi/Documents/Code/Projeto-ATMCP/C15-Documentos-em-PDF-e-Word/exercicio_pratico.py'])
