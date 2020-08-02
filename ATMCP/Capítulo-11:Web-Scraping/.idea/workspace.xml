@@ -20,8 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d82edef-b570-40ac-8e1a-d46d38e2c193" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../C18-Enviando-Emails-e-SMS/sending_emails.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../C18-Enviando-Emails-e-SMS/sending_emails.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C18-Enviando-Emails-e-SMS/sheets_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../C18-Enviando-Emails-e-SMS/sheets_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C12-Web-Scraping/whatsapp_bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../C12-Web-Scraping/whatsapp_bot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C15-Documentos-em-PDF-e-Word/.~lock.guests.docx#" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,11 +52,12 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last.edited.regexp" value="Davi" />
     <property name="last_opened_file_path" value="$USER_HOME$/facebook-friend-graph/facebookFOF.py" />
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
-  <component name="RunManager" selected="Python.sheets_test">
-    <configuration name="controle_de_teclado" type="PythonConfigurationType" factoryName="Python" singleton="false" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.whatsapp_bot">
+    <configuration name="dna" type="PythonConfigurationType" factoryName="Python" singleton="false" temporary="true" nameIsGenerated="true">
       <module name="Capítulo-11Web-Scraping" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -63,11 +65,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="/usr/bin/python3.8" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../C20-Controle-de-Teclado" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../../Harvard-CS50/Aula06-Python/dna" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../C20-Controle-de-Teclado/controle_de_teclado.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../../Harvard-CS50/Aula06-Python/dna/dna.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -76,7 +78,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="forms_maker" type="PythonConfigurationType" factoryName="Python" singleton="false" temporary="true" nameIsGenerated="true">
+    <configuration name="readability" type="PythonConfigurationType" factoryName="Python" singleton="false" temporary="true" nameIsGenerated="true">
       <module name="Capítulo-11Web-Scraping" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -84,11 +86,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="/usr/bin/python3.8" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../C13-Planilhas-Excel" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../../Harvard-CS50/Aula06-Python" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../C13-Planilhas-Excel/forms_maker.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../../Harvard-CS50/Aula06-Python/readability.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -97,7 +99,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="mouse_info_test" type="PythonConfigurationType" factoryName="Python" singleton="false" temporary="true" nameIsGenerated="true">
+    <configuration name="retest" type="PythonConfigurationType" factoryName="Python" singleton="false" temporary="true" nameIsGenerated="true">
       <module name="Capítulo-11Web-Scraping" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -105,11 +107,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="/usr/bin/python3.8" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../C20-Controle-de-Teclado" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../../Harvard-CS50/Aula06-Python/dna" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../C20-Controle-de-Teclado/mouse_info_test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../../Harvard-CS50/Aula06-Python/dna/retest.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -118,7 +120,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="quickstart" type="PythonConfigurationType" factoryName="Python" singleton="false" temporary="true" nameIsGenerated="true">
+    <configuration name="reteste" type="PythonConfigurationType" factoryName="Python" singleton="false" temporary="true" nameIsGenerated="true">
       <module name="Capítulo-11Web-Scraping" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -126,11 +128,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="/usr/bin/python3.8" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../C18-Enviando-Emails-e-SMS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../../Harvard-CS50/Aula06-Python/dna" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../C18-Enviando-Emails-e-SMS/quickstart.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../../Harvard-CS50/Aula06-Python/dna/reteste.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -139,7 +141,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="sheets_test" type="PythonConfigurationType" factoryName="Python" singleton="false" temporary="true" nameIsGenerated="true">
+    <configuration name="whatsapp_bot" type="PythonConfigurationType" factoryName="Python" singleton="false" temporary="true" nameIsGenerated="true">
       <module name="Capítulo-11Web-Scraping" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -147,11 +149,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="/usr/bin/python3.8" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../C18-Enviando-Emails-e-SMS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../C12-Web-Scraping" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../C18-Enviando-Emails-e-SMS/sheets_test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../C12-Web-Scraping/whatsapp_bot.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -162,11 +164,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.sheets_test" />
-        <item itemvalue="Python.quickstart" />
-        <item itemvalue="Python.forms_maker" />
-        <item itemvalue="Python.controle_de_teclado" />
-        <item itemvalue="Python.mouse_info_test" />
+        <item itemvalue="Python.whatsapp_bot" />
+        <item itemvalue="Python.dna" />
+        <item itemvalue="Python.reteste" />
+        <item itemvalue="Python.retest" />
+        <item itemvalue="Python.readability" />
       </list>
     </recent_temporary>
   </component>
@@ -228,10 +230,18 @@
       <screen x="1024" y="131" width="1366" height="768" />
     </state>
     <state x="1024" y="158" width="666" height="741" key="#controle_de_teclado/1024.131.1366.768/0.158.1024.610@1024.131.1366.768" timestamp="1594434813498" />
+    <state x="1024" y="194" width="659" height="740" key="#credit" timestamp="1596112945812">
+      <screen x="1024" y="166" width="1366" height="768" />
+    </state>
+    <state x="1024" y="194" width="659" height="740" key="#credit/1024.166.1366.768/0.194.1024.574@1024.166.1366.768" timestamp="1596112945812" />
     <state x="1024" y="158" width="666" height="741" key="#datetime_test" timestamp="1594315071520">
       <screen x="1024" y="131" width="1366" height="768" />
     </state>
     <state x="1024" y="158" width="666" height="741" key="#datetime_test/1024.131.1366.768/0.158.1024.610@1024.131.1366.768" timestamp="1594315071520" />
+    <state x="1024" y="194" width="659" height="740" key="#dna" timestamp="1596129438960">
+      <screen x="1024" y="166" width="1366" height="768" />
+    </state>
+    <state x="1024" y="194" width="659" height="740" key="#dna/1024.166.1366.768/0.194.1024.574@1024.166.1366.768" timestamp="1596129438960" />
     <state x="1024" y="158" width="666" height="741" key="#exercicio_pratico" timestamp="1594247173769">
       <screen x="1024" y="131" width="1366" height="768" />
     </state>
@@ -256,6 +266,10 @@
       <screen x="1024" y="131" width="1366" height="768" />
     </state>
     <state x="1024" y="158" width="666" height="741" key="#json_decode/1024.131.1366.768/0.158.1024.610@1024.131.1366.768" timestamp="1594304552184" />
+    <state x="348" y="28" width="659" height="736" key="#launching_other_programs" timestamp="1595814759660">
+      <screen x="0" y="28" width="1366" height="740" />
+    </state>
+    <state x="348" y="28" width="659" height="736" key="#launching_other_programs/0.28.1366.740@0.28.1366.740" timestamp="1595814759660" />
     <state x="1024" y="158" width="666" height="741" key="#mouse_info_test" timestamp="1594433854673">
       <screen x="1024" y="131" width="1366" height="768" />
     </state>
@@ -268,10 +282,22 @@
       <screen x="0" y="28" width="1366" height="740" />
     </state>
     <state x="348" y="28" width="659" height="736" key="#quickstart/0.28.1366.740@0.28.1366.740" timestamp="1595813398728" />
+    <state x="1024" y="194" width="659" height="740" key="#readability" timestamp="1596115842908">
+      <screen x="1024" y="166" width="1366" height="768" />
+    </state>
+    <state x="1024" y="194" width="659" height="740" key="#readability/1024.166.1366.768/0.194.1024.574@1024.166.1366.768" timestamp="1596115842908" />
     <state x="1024" y="158" width="666" height="741" key="#remove_csv_header" timestamp="1594291943724">
       <screen x="1024" y="131" width="1366" height="768" />
     </state>
     <state x="1024" y="158" width="666" height="741" key="#remove_csv_header/1024.131.1366.768/0.158.1024.610@1024.131.1366.768" timestamp="1594291943724" />
+    <state x="1024" y="194" width="659" height="740" key="#retest" timestamp="1596121261245">
+      <screen x="1024" y="166" width="1366" height="768" />
+    </state>
+    <state x="1024" y="194" width="659" height="740" key="#retest/1024.166.1366.768/0.194.1024.574@1024.166.1366.768" timestamp="1596121261245" />
+    <state x="1024" y="194" width="659" height="740" key="#reteste" timestamp="1596122093659">
+      <screen x="1024" y="166" width="1366" height="768" />
+    </state>
+    <state x="1024" y="194" width="659" height="740" key="#reteste/1024.166.1366.768/0.194.1024.574@1024.166.1366.768" timestamp="1596122093659" />
     <state x="348" y="28" width="659" height="736" key="#sheets_test" timestamp="1595812542613">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
@@ -284,6 +310,14 @@
       <screen x="1024" y="131" width="1366" height="768" />
     </state>
     <state x="1024" y="158" width="666" height="741" key="#time_test/1024.131.1366.768/0.158.1024.610@1024.131.1366.768" timestamp="1594312529448" />
+    <state x="348" y="28" width="659" height="736" key="#whatsapp_bot" timestamp="1596331963908">
+      <screen x="0" y="28" width="1366" height="740" />
+    </state>
+    <state x="348" y="28" width="659" height="736" key="#whatsapp_bot/0.28.1366.740@0.28.1366.740" timestamp="1596331963908" />
+    <state x="348" y="28" width="659" height="736" key="#word_e_excel" timestamp="1595816526635">
+      <screen x="0" y="28" width="1366" height="740" />
+    </state>
+    <state x="348" y="28" width="659" height="736" key="#word_e_excel/0.28.1366.740@0.28.1366.740" timestamp="1595816526635" />
     <state x="1024" y="158" width="666" height="741" key="#writing_on_CSV" timestamp="1594253670123">
       <screen x="1024" y="131" width="1366" height="768" />
     </state>
@@ -292,63 +326,72 @@
       <screen x="1024" y="131" width="1366" height="768" />
     </state>
     <state x="1024" y="158" width="666" height="741" key="#xl_to_csv/1024.131.1366.768/0.158.1024.610@1024.131.1366.768" timestamp="1594308447357" />
-    <state x="1552" y="261" width="424" height="491" key="FileChooserDialogImpl" timestamp="1594945463045">
-      <screen x="1024" y="131" width="1366" height="768" />
+    <state x="1552" y="296" width="424" height="491" key="FileChooserDialogImpl" timestamp="1596034711551">
+      <screen x="1024" y="166" width="1366" height="768" />
     </state>
     <state x="454" y="155" width="424" height="491" key="FileChooserDialogImpl/0.27.1366.741@0.27.1366.741" timestamp="1594173816066" />
     <state x="1552" y="261" width="424" height="491" key="FileChooserDialogImpl/1024.131.1366.768/0.158.1024.610@1024.131.1366.768" timestamp="1594945463045" />
+    <state x="1552" y="296" key="FileChooserDialogImpl/1024.166.1366.768/0.194.1024.574@1024.166.1366.768" timestamp="1596034711551" />
     <state x="502" y="155" width="424" height="491" key="FileChooserDialogImpl/72.27.1294.741@72.27.1294.741" timestamp="1593796790344" />
-    <state width="1343" height="560" key="GridCell.Tab.0.bottom" timestamp="1595813653472">
+    <state width="1343" height="507" key="GridCell.Tab.0.bottom" timestamp="1596332297161">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
     <state width="1343" height="172" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1594230695980" />
-    <state width="1343" height="560" key="GridCell.Tab.0.bottom/0.28.1366.740@0.28.1366.740" timestamp="1595813653472" />
+    <state width="1343" height="507" key="GridCell.Tab.0.bottom/0.28.1366.740@0.28.1366.740" timestamp="1596332297161" />
     <state width="1271" height="550" key="GridCell.Tab.0.bottom/1024.131.1366.768/0.158.1024.610@1024.131.1366.768" timestamp="1594948594826" />
+    <state width="1343" height="507" key="GridCell.Tab.0.bottom/1024.166.1366.768/0.194.1024.574@1024.166.1366.768" timestamp="1596131977099" />
     <state width="1271" height="172" key="GridCell.Tab.0.bottom/72.27.1294.741@72.27.1294.741" timestamp="1593805527341" />
-    <state width="1343" height="560" key="GridCell.Tab.0.center" timestamp="1595813653470">
+    <state width="1343" height="507" key="GridCell.Tab.0.center" timestamp="1596332297161">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
     <state width="1343" height="172" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1594230695980" />
-    <state width="1343" height="560" key="GridCell.Tab.0.center/0.28.1366.740@0.28.1366.740" timestamp="1595813653470" />
+    <state width="1343" height="507" key="GridCell.Tab.0.center/0.28.1366.740@0.28.1366.740" timestamp="1596332297161" />
     <state width="1271" height="550" key="GridCell.Tab.0.center/1024.131.1366.768/0.158.1024.610@1024.131.1366.768" timestamp="1594948594826" />
+    <state width="1343" height="507" key="GridCell.Tab.0.center/1024.166.1366.768/0.194.1024.574@1024.166.1366.768" timestamp="1596131977099" />
     <state width="1271" height="172" key="GridCell.Tab.0.center/72.27.1294.741@72.27.1294.741" timestamp="1593805527341" />
-    <state width="1343" height="560" key="GridCell.Tab.0.left" timestamp="1595813653469">
+    <state width="1343" height="507" key="GridCell.Tab.0.left" timestamp="1596332297160">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
     <state width="1343" height="172" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1594230695980" />
-    <state width="1343" height="560" key="GridCell.Tab.0.left/0.28.1366.740@0.28.1366.740" timestamp="1595813653469" />
+    <state width="1343" height="507" key="GridCell.Tab.0.left/0.28.1366.740@0.28.1366.740" timestamp="1596332297160" />
     <state width="1271" height="550" key="GridCell.Tab.0.left/1024.131.1366.768/0.158.1024.610@1024.131.1366.768" timestamp="1594948594826" />
+    <state width="1343" height="507" key="GridCell.Tab.0.left/1024.166.1366.768/0.194.1024.574@1024.166.1366.768" timestamp="1596131977099" />
     <state width="1271" height="172" key="GridCell.Tab.0.left/72.27.1294.741@72.27.1294.741" timestamp="1593805527340" />
-    <state width="1343" height="560" key="GridCell.Tab.0.right" timestamp="1595813653471">
+    <state width="1343" height="507" key="GridCell.Tab.0.right" timestamp="1596332297161">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
     <state width="1343" height="172" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1594230695980" />
-    <state width="1343" height="560" key="GridCell.Tab.0.right/0.28.1366.740@0.28.1366.740" timestamp="1595813653471" />
+    <state width="1343" height="507" key="GridCell.Tab.0.right/0.28.1366.740@0.28.1366.740" timestamp="1596332297161" />
     <state width="1271" height="550" key="GridCell.Tab.0.right/1024.131.1366.768/0.158.1024.610@1024.131.1366.768" timestamp="1594948594826" />
+    <state width="1343" height="507" key="GridCell.Tab.0.right/1024.166.1366.768/0.194.1024.574@1024.166.1366.768" timestamp="1596131977099" />
     <state width="1271" height="172" key="GridCell.Tab.0.right/72.27.1294.741@72.27.1294.741" timestamp="1593805527341" />
-    <state width="1343" height="215" key="GridCell.Tab.1.bottom" timestamp="1594437102190">
-      <screen x="1024" y="131" width="1366" height="768" />
+    <state width="1343" height="218" key="GridCell.Tab.1.bottom" timestamp="1596131281403">
+      <screen x="1024" y="166" width="1366" height="768" />
     </state>
     <state width="1343" height="215" key="GridCell.Tab.1.bottom/0.27.1366.741@0.27.1366.741" timestamp="1594222298618" />
     <state width="1343" height="215" key="GridCell.Tab.1.bottom/1024.131.1366.768/0.158.1024.610@1024.131.1366.768" timestamp="1594437102190" />
+    <state width="1343" height="218" key="GridCell.Tab.1.bottom/1024.166.1366.768/0.194.1024.574@1024.166.1366.768" timestamp="1596131281403" />
     <state width="1271" height="215" key="GridCell.Tab.1.bottom/72.27.1294.741@72.27.1294.741" timestamp="1593805232330" />
-    <state width="1343" height="215" key="GridCell.Tab.1.center" timestamp="1594437102190">
-      <screen x="1024" y="131" width="1366" height="768" />
+    <state width="1343" height="218" key="GridCell.Tab.1.center" timestamp="1596131281403">
+      <screen x="1024" y="166" width="1366" height="768" />
     </state>
     <state width="1343" height="215" key="GridCell.Tab.1.center/0.27.1366.741@0.27.1366.741" timestamp="1594222298617" />
     <state width="1343" height="215" key="GridCell.Tab.1.center/1024.131.1366.768/0.158.1024.610@1024.131.1366.768" timestamp="1594437102190" />
+    <state width="1343" height="218" key="GridCell.Tab.1.center/1024.166.1366.768/0.194.1024.574@1024.166.1366.768" timestamp="1596131281403" />
     <state width="1271" height="215" key="GridCell.Tab.1.center/72.27.1294.741@72.27.1294.741" timestamp="1593805232330" />
-    <state width="1343" height="215" key="GridCell.Tab.1.left" timestamp="1594437102190">
-      <screen x="1024" y="131" width="1366" height="768" />
+    <state width="1343" height="218" key="GridCell.Tab.1.left" timestamp="1596131281403">
+      <screen x="1024" y="166" width="1366" height="768" />
     </state>
     <state width="1343" height="215" key="GridCell.Tab.1.left/0.27.1366.741@0.27.1366.741" timestamp="1594222298616" />
     <state width="1343" height="215" key="GridCell.Tab.1.left/1024.131.1366.768/0.158.1024.610@1024.131.1366.768" timestamp="1594437102190" />
+    <state width="1343" height="218" key="GridCell.Tab.1.left/1024.166.1366.768/0.194.1024.574@1024.166.1366.768" timestamp="1596131281403" />
     <state width="1271" height="215" key="GridCell.Tab.1.left/72.27.1294.741@72.27.1294.741" timestamp="1593805232330" />
-    <state width="1343" height="215" key="GridCell.Tab.1.right" timestamp="1594437102190">
-      <screen x="1024" y="131" width="1366" height="768" />
+    <state width="1343" height="218" key="GridCell.Tab.1.right" timestamp="1596131281403">
+      <screen x="1024" y="166" width="1366" height="768" />
     </state>
     <state width="1343" height="215" key="GridCell.Tab.1.right/0.27.1366.741@0.27.1366.741" timestamp="1594222298618" />
     <state width="1343" height="215" key="GridCell.Tab.1.right/1024.131.1366.768/0.158.1024.610@1024.131.1366.768" timestamp="1594437102190" />
+    <state width="1343" height="218" key="GridCell.Tab.1.right/1024.166.1366.768/0.194.1024.574@1024.166.1366.768" timestamp="1596131281403" />
     <state width="1271" height="215" key="GridCell.Tab.1.right/72.27.1294.741@72.27.1294.741" timestamp="1593805232330" />
     <state x="1118" y="162" width="1022" height="737" key="SettingsEditor" timestamp="1594299683612">
       <screen x="1024" y="131" width="1366" height="768" />
@@ -363,10 +406,15 @@
     </state>
     <state x="454" y="312" width="458" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.27.1366.741@0.27.1366.741" timestamp="1593974008697" />
     <state x="1478" y="426" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1024.131.1366.768/0.158.1024.610@1024.131.1366.768" timestamp="1594426777815" />
-    <state x="1351" y="195" width="672" height="703" key="search.everywhere.popup" timestamp="1594945132512">
-      <screen x="1024" y="131" width="1366" height="768" />
+    <state width="600" height="428" key="javadoc.popup" timestamp="1596111443528">
+      <screen x="1024" y="166" width="1366" height="768" />
+    </state>
+    <state width="600" height="428" key="javadoc.popup/1024.166.1366.768/0.194.1024.574@1024.166.1366.768" timestamp="1596111443528" />
+    <state x="327" y="90" width="672" height="678" key="search.everywhere.popup" timestamp="1596330787111">
+      <screen x="0" y="28" width="1366" height="740" />
     </state>
     <state x="327" y="89" width="672" height="678" key="search.everywhere.popup/0.27.1366.741@0.27.1366.741" timestamp="1594218263468" />
+    <state x="327" y="90" width="672" height="678" key="search.everywhere.popup/0.28.1366.740@0.28.1366.740" timestamp="1596330787111" />
     <state x="1351" y="195" width="672" height="703" key="search.everywhere.popup/1024.131.1366.768/0.158.1024.610@1024.131.1366.768" timestamp="1594945132512" />
     <state x="382" y="89" key="search.everywhere.popup/72.27.1294.741@72.27.1294.741" timestamp="1593788205931" />
   </component>
