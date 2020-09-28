@@ -3,8 +3,8 @@ import os
 
 def main():
     os.chdir('../down')
-    create_files() 
-    #delete_files()
+    #create_files() 
+    delete_files()
     return 
 
 
