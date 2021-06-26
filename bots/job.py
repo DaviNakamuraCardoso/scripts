@@ -6,7 +6,7 @@ from csv import DictWriter
 
 
 info = {}
-output = open("info2.csv", "w")
+output = open("info3.csv", "w")
 writer = DictWriter(output, ["name", "email", "phone", "role", "company"])
 writer.writeheader()
 
@@ -17,7 +17,7 @@ def main(argc, argv):
 
     sleep(3)
 
-    for i in range(9, 115):
+    for i in range(35, 115):
         get_people(driver, i)
 
     driver.quit()
@@ -50,9 +50,9 @@ def get_page(driver, page):
 
     sleep(3)
     for i in range(1, page):
-       sleep(3)
-       next = driver.find_element_by_id("click-next-page")
-       next.click()
+        sleep(1)
+        next = driver.find_element_by_id("click-next-page")
+        next.click()
 
     page = driver.find_element_by_id(f"click-page-{page}")
     page.click()
@@ -77,9 +77,6 @@ def get_person(driver, element, role, company):
     writer.writerow(info[name])
 
     print("\n")
-    talk(driver, name)
-
-    sleep(4)
     return
 
 
