@@ -8,15 +8,25 @@ binmode(STDOUT, 'utf:8');
 
 my $counter = 0;
 my $word = $ARGV[0];
+my %appearences = ();
+
 
 while (my $line = <BIBLE>)
 {
     my @words = split(" ", $line);
-    foreach (@words) {
-        if (lc($_) eq lc($word)) {
-            $counter++;
+    foreach (@words)
+    {
+        my $lower = lc($_);
+
+        if (not $appearences{$lower})
+        {
+            $appearences{$lower} = 1;
+        }
+        else
+        {
+            $appearences{$lower}++;
         }
     }
 }
 
-say "The word $word appears $counter times on the King James Version of the Bible";
+say "The word $word appears $appearences{$word} times on the King James Version of the Bible";
