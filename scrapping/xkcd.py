@@ -23,5 +23,3 @@ for i in range(10):
 
     previous_link = soup.select('a[rel="prev"]')[0]
     url = 'http://xkcd.com' + previous_link.get('href')
-
-
