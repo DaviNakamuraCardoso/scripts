@@ -7,26 +7,24 @@ open(BIBLE, "<:utf8", "bible.txt");
 binmode(STDOUT, 'utf:8');
 
 my $counter = 0;
-my $word = $ARGV[0];
+my $search = $ARGV[0];
 my %appearences = ();
 
 
 while (my $line = <BIBLE>)
 {
     my @words = split(" ", $line);
-    foreach (@words)
+    foreach my $word (@words)
     {
-        my $lower = lc($_);
+        my $lower = lc($word);
 
-        if (not $appearences{$lower})
+        unless ($appearences{$lower})
         {
-            $appearences{$lower} = 1;
+            $appearences{$lower} = 0;
         }
-        else
-        {
-            $appearences{$lower}++;
-        }
+
+        $appearences{$lower}++;
     }
 }
 
-say "The word $word appears $appearences{$word} times on the King James Version of the Bible";
+say "The word $search appears $appearences{lc($search)} times on the King James Version of the Bible";
