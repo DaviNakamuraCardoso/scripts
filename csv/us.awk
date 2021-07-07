@@ -8,7 +8,7 @@ BEGIN {
 
 parseint($9) > population {
     population = parseint($9);
-    city = $1;
+    city = $2;
 }
 
 function parseint(string)
