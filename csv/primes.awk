@@ -1,9 +1,6 @@
-#! /usr/bin/awk -f
-
-
 
 BEGIN {
-    size = 100;
+    size = 1000000;
     for (i = 0; i < size; i++)
     {
         rawbits[i] = 1;
@@ -13,7 +10,7 @@ BEGIN {
 
 function reset()
 {
-    for (i = 0; i < size; i++)
+    for (i = 0; i < size; i+=2)
     {
         rawbits[i] = 1;
     }
@@ -28,26 +25,13 @@ function validate_results()
 
 function count_primes()
 {
-    counter = 0;
-    for (i = 3; i < size; i++)
+    counter = 1;
+    for (i = 3; i < size; i+=2)
     {
-        if (getbit(i) == 1) counter++;
+        if (rawbits[i] == 1) counter++;
     }
 
     return counter;
-}
-
-function clearbit(i)
-{
-    if (i % 2 == 0) print ";";
-    rawbits[i] = 0;
-    return;
-}
-
-function getbit(i)
-{
-    if ((i % 2) == 0) return 0;
-    return rawbits[i];
 }
 
 function run_sieve()
@@ -55,18 +39,18 @@ function run_sieve()
     factor = 3;
     q = int(sqrt(size));
 
-    while (factor < q)
+    while (factor <= q)
     {
         for (i = factor; i < size; i+=2)
         {
             if (rawbits[i] == 1)
             {
-                factor = num;
+                factor = i;
                 break;
             }
         }
 
-        for (i = factor*factor; i < size; i += factor*2)
+        for (i = factor*3; i < size; i += factor*2)
         {
             rawbits[i] = 0;
         }
@@ -74,8 +58,34 @@ function run_sieve()
         factor = factor + 2;
     }
 
-    reset();
 
+    return;
+}
+
+function print_results(show_results, passes, duration)
+{
+    if (show_results)
+        printf("2, ");
+
+    count = 1;
+    for (i = 3; i < size; i+=2)
+    {
+        if (rawbits[i] == 1)
+        {
+            if (show_results) printf("%i, ", i);
+            count++;
+        }
+    }
+
+    if (count != count_primes())
+    {
+        print "Wrong count of primes";
+        exit;
+    }
+
+    print "Passes: " passes ", Time: " duration ", Average: " duration / passes ", Count: " count ", Valid: " validate_results();
+
+    print "DaviNakamuraCardoso;" passes ";" duration ";algorithm=base,faithful=yes";
     return;
 }
 
@@ -85,10 +95,12 @@ END {
     passes = 0;
 
     do {
+        reset();
         run_sieve();
         passes++;
         now = systime();
     } while ((now - start) < 5);
 
-    print passes;
+    print_results(0, passes, now-start);
+
 }
