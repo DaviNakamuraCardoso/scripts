@@ -18,7 +18,7 @@ making the hard jobs impossible.
 
 ## Raku
 ![Camelia, the Raku Bug](./camelia.png)
-Hi, my name is [Camelia]("https://en.wikipedia.org/wiki/Raku_(programming_language)#Mascot"). I'm the spokesbug for [Raku](https://raku.org). Raku intends to carry forward the high ideals of the Perl community. Raku has been developed by a team of dedicated and enthusiastic volunteers, and continues to be developed. You can help too. The only requirement is that you know how to be nice to all kinds of people (and butterflies). Go to #raku (irc.libera.chat) and someone will be glad to help you get started.
+Hi, my name is [Camelia](https://en.wikipedia.org/wiki/Raku_(programming_language)#Mascot). I'm the spokesbug for [Raku](https://raku.org). Raku intends to carry forward the high ideals of the Perl community. Raku has been developed by a team of dedicated and enthusiastic volunteers, and continues to be developed. You can help too. The only requirement is that you know how to be nice to all kinds of people (and butterflies). Go to #raku (irc.libera.chat) and someone will be glad to help you get started.
 
 ## Awk
 Computer users spend a lot of time doing simple, mechanical data manipula-
