@@ -1,15 +1,25 @@
 
-grammar Dice {
-    rule TOP { <subject> <verb> <object> }
-    rule subject { <art> <noun> }
-    rule object { <art>? <adj>? <noun> } 
-    token adj { "two" | "furry" | "three" } 
-    token verb { "bit" | "kicked" | "stroked" }
-    token art { "the" | "a" }
-    token noun { "dog" | "cat" | "dice" | "man" | "woman" | "robot" }
 
+my $fd = open "words.txt", :r;
+$fd.WHAT;
+my $contents = $fd.slurp.lines;
+say $contents; 
+
+grammar Dice {
+
+    # Tokens
+    token adj { < two furry little green red > };
+    token verb { "bit" | "kicked" | "stroked" };
+    token art { :i"the" | :i"a" };
+
+    # Rules 
+    rule comp { [<adj> ]* }; 
+    rule subject { <art> <noun> }; rule object { <art>? <comp> <noun> }; rule TOP { <subject> <verb> <object> }; 
+    rule noun { $contents }; 
 }
 
-say Dice.parse: "the robot stroked the dice"; 
-say Dice.parse: "a man kicked a woman"; 
-say Dice.parse: "a dog bit a robot"; 
+say Dice.parse: "The robot stroked two red furry little little green dice"; 
+say Dice.parse: "a man kicked the little dog"; 
+say Dice.parse: "I like Raku"; 
+
+
