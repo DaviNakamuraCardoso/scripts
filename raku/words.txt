@@ -8975,7 +8975,8 @@ awheel
 awhile
 awhiles
 awhirl
-awing
+aing
+awk
 awkward
 awkwardly
 awkwardness
@@ -16739,6 +16740,7 @@ byzantinises
 byzantinize
 byzantinizes
 byzantium
+c
 ca
 cab
 cab's
@@ -17314,6 +17316,8 @@ camden
 camden's
 came
 camel
+raku
+camelia
 camel's
 camelback
 cameleer
@@ -30289,6 +30293,7 @@ davao
 dave
 dave's
 davenport
+davi
 david
 david's
 davidovich
@@ -91971,6 +91976,7 @@ perking
 perkins
 perks
 perky
+perl
 perle
 perle's
 perlis
@@ -102035,6 +102041,7 @@ raking
 rakish
 rakishly
 rakishness
+raku
 rale
 raleigh
 rallentando
@@ -143088,4 +143095,3 @@ zygote
 zygote's
 zygotes
 zymurgy
-raku
