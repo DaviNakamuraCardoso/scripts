@@ -392,7 +392,9 @@ hang
 happen
 harass
 harm
+has
 hate
+have
 haunt
 head
 heal
