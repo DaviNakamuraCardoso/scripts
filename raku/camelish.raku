@@ -20,14 +20,14 @@ grammar Camelish {
 
     # Rules 
     rule TOP { [<phrase> ]+ }; 
-    rule phrase { <subject> <verb> <object>"."}
-    rule subject { <art>? [<noun> ]* <noun> }; 
+    rule phrase { <subject><verb><object>"."}
+    rule subject { <art>? <name>}; 
     rule object { <art>? <comp>? [<noun><sep>?]* }; 
-    rule comp { [<adj> ]+ }; 
+    rule comp { [<adj> ]* }; 
+    rule name { <noun> [ <noun>]* };
 }
 
-say Camelish.parse: "Brian Davi likes C. "; 
-#say Camelish.parse: "Brian likes C. Davi likes C. ";
+say Camelish.parse: "Brian Kernighan likes C. "; 
 
 
 
