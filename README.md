@@ -1,11 +1,7 @@
 # Scripts 
 ## Simple and short programs to solve small problems
 
-A collection of small programs written in scripting languages to perform simple tasks, such as 
-    - renaming and searching for files; 
-    - manipulating documents, images, PDFs and CSVs; 
-    - sending emails and messages;    
-    - making API calls.
+A collection of small programs written in scripting languages to perform simple tasks.  
 
 ## Languages used
 ### Perl
