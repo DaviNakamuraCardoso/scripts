@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
-#include "tokenizer.h"
 #include "tokens.h"
+#include "tokenizer.h"
 
 int ascii(char c)
 {
@@ -43,8 +43,40 @@ void add_word(WORD* root, char* word, enum wordclass class)
 
 }
 
+
+static unsigned int isnumeral(char* word)
+{
+    for (int i = 0; word[i] != '\0'; i++)
+    {
+        if (!isdigit(word[i])) return 0; 
+    }
+    return 1; 
+}
+
+
+unsigned int issym(char c)
+{
+    switch(c)
+    {
+        case ',':
+        case '.':
+        case ':':
+        case '-':
+        case '?':
+        case '+':
+        case '!':
+        case '"':
+            return 1; 
+    }
+    return 0;
+}
+
 unsigned int search_word(WORD* root, char* word)
 {
+
+    if (isnumeral(word)) return NUMERAL; 
+    if (issym(*word)) return SYMBOL;
+
     WORD* current = root; 
     for (int i = 0; word[i] != '\0'; i++)
     {
@@ -111,7 +143,9 @@ char* classtr(unsigned int c, char* str)
         "article", 
         "adverb", 
         "conjunction", 
-        "preposition"
+        "preposition", 
+        "numeral", 
+        "symbol"
     };
 
     str[0] = '\0';
@@ -122,6 +156,6 @@ char* classtr(unsigned int c, char* str)
          cat(str, classes[i]);  
        }
     }
-    return; 
+    return str; 
 
 }

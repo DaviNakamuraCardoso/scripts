@@ -1,6 +1,6 @@
 
 CC = gcc 
-FLAGS = -Wall 
+FLAGS = -Wall -Ofast
 
 %.o: %.c
 	$(CC) $(FLAGS) -c $^ -o $@ 

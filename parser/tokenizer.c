@@ -1,13 +1,25 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include <ctype.h>
+#include "tokens.h"
 #include "tokenizer.h"
 
+
+TOKEN* new_token(char* word, unsigned int class)
+{
+    TOKEN* t = malloc(sizeof(TOKEN));
+    t->word = strdup(word);
+    t->class = class; 
+
+    return t; 
+}
 
 static unsigned int isnewline(char c)
 {
     return c == '\n'; 
 }
+
 
 int getword(char* phrase, int index, char* buff)
 {
@@ -19,21 +31,48 @@ int getword(char* phrase, int index, char* buff)
     }
     buff[j] = '\0'; 
 
-    for (; !isalnum(phrase[i]) && phrase[i] != '\0'; i++) {}
+    for (; isblank(phrase[i]); i++) {}
+
+    if (i == index)
+    {
+        if (issym(phrase[i])) { buff[0] = phrase[i++]; buff[1] = '\0'; }
+        for (; !isalnum(phrase[i]) && phrase[i] != '\0'; i++) {}
+    }
     return i-1;
 
 }
 
-int getwords(char* buff)
+TOKEN** tokenize(WORD* dictionary, const char* filename)
 {
-    for (int i = 0; buff[i] != '\0';i++)
-    {
-        char word[100];
-        i = getword(buff, i, word);
-        printf("%s\n", word); 
+    FILE* f = fopen(filename, "r");
+    TOKEN **tokens = calloc(sizeof(TOKEN*), 10000000);
+    char buffer[300];
+    unsigned long counter = 0; 
 
+    inline int searchwords(char* buff)
+    {
+        char debg[300];
+        unsigned int type; 
+        for (int i = 0; buff[i] != '\0';i++)
+        {
+            char word[200];
+            i = getword(buff, i, word);
+            type = search_word(dictionary, word); 
+            tokens[counter++] = new_token(word, type); 
+
+
+            printf("%s => %s\n", word, classtr(type, debg));
+
+        }
+        return 0; 
     }
-    return 0;
+
+    while (get_line(f, buffer) != NULL)
+    {
+        searchwords(buffer); 
+    }
+    return tokens;
+
 }
 
 // Get the next line 
