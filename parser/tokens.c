@@ -2,22 +2,23 @@
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
+#include "types.h"
 #include "tokens.h"
 #include "tokenizer.h"
 
 int ascii(char c)
-{
+{ 
     if (!isalpha(c)) return WORDSIZE-1; 
     if (isupper(c)) return c - 'A';
-
     return c - 'a'; 
 }
 
-WORD* new_word(void)
+WORD* new_word(WORD* parent)
 {
     WORD* w = malloc(sizeof(WORD));
     for (int i = 0; i < WORDSIZE; i++) w->next[i] = NULL; 
-    w->class = 1; 
+    w->class = INEXISTENT; 
+    w->word = NULL; 
 
     return w; 
 }
@@ -30,7 +31,7 @@ void add_word(WORD* root, char* word, enum wordclass class)
         int index = ascii(word[i]);
         if (current->next[index] == NULL)
         {
-            current->next[index] = new_word();
+            current->next[index] = new_word(current);
         }
         current = current->next[index];
 
@@ -38,55 +39,29 @@ void add_word(WORD* root, char* word, enum wordclass class)
 
     // Turns off the "inexistent" bit
     current->class &= ~INEXISTENT;  
+
     // Turns on the class bit
     current->class |= class;
-
+    current->word = strdup(word); 
 }
 
 
-static unsigned int isnumeral(char* word)
-{
-    for (int i = 0; word[i] != '\0'; i++)
-    {
-        if (!isdigit(word[i])) return 0; 
-    }
-    return 1; 
-}
-
-
-unsigned int issym(char c)
-{
-    switch(c)
-    {
-        case ',':
-        case '.':
-        case ':':
-        case '-':
-        case '?':
-        case '+':
-        case '!':
-        case '"':
-            return 1; 
-    }
-    return 0;
-}
-
-unsigned int search_word(WORD* root, char* word)
+WORD* search_word(DICTIONARY d, char* word)
 {
 
-    if (isnumeral(word)) return NUMERAL; 
-    if (issym(*word)) return SYMBOL;
+    if (isnumeral(word) | issym(*word)) return NULL; 
 
-    WORD* current = root; 
+    WORD* current = d.words; 
     for (int i = 0; word[i] != '\0'; i++)
     {
        current = current->next[ascii(word[i])];
-       if (current == NULL) return INEXISTENT;  
+       if (current == NULL) return NULL;  
     }
 
-    return current->class; 
+    return current; 
 
 } 
+
 
 void add_file(WORD* dictionary, const char* filename, enum wordclass class)
 {
@@ -103,59 +78,48 @@ void add_file(WORD* dictionary, const char* filename, enum wordclass class)
 
 }
 
-
-WORD* new_dictionary(void)
+Symbol* new_Symbol(char ascii, enum symbol type, const char* str)
 {
-    WORD* dictionary = new_word();
-
-    add_file(dictionary, "data/nouns/nouns.txt", NOUN);
-    add_file(dictionary, "data/verbs/verbs.txt", VERB); 
-    add_file(dictionary, "data/adjectives/adjectives.txt", ADJECTIVE);
-    add_file(dictionary, "data/adverbs/adverbs.txt", ADVERB); 
-    add_file(dictionary, "data/articles/articles.txt", ARTICLE);
-    add_file(dictionary, "data/pronouns/pronouns.txt", PRONOUN);
-    add_file(dictionary, "data/conjunctions/conjunctions.txt", CONJUNCTION);
-    add_file(dictionary, "data/prepositions/prepositions.txt", PREPOSITION); 
-
-    return dictionary; 
+    Symbol* s = malloc(sizeof(Symbol));
+    s->ascii = ascii; 
+    s->type = type;
+    s->str = strdup(str);
+    return s; 
 }
 
 
-static void cat(char* str, char* lit)
+
+void symbollist(Symbol** emptylist)
 {
-    int i; 
-    for (i = 0; str[i] != '\0'; i++) {}
-    if (i > 0) { str[i++] = ','; }
-    for (int j = 0; lit[j] != '\0'; i++, j++) {
-        str[i] = lit[j];
-    }
-    str[i] = '\0'; 
+    emptylist[COMMA] =          new_Symbol(',', COMMA, "comma");
+    emptylist[DOT] =            new_Symbol('.', DOT, "dot");
+    emptylist[EXCLAMATION] =    new_Symbol('!', EXCLAMATION, "exclamation point");   
+    emptylist[COLON] =          new_Symbol(':', COLON, "colon");
+    emptylist[SEMICOLON] =      new_Symbol(';', SEMICOLON, "semicolon");
+    emptylist[QUESTION] =       new_Symbol('?', QUESTION, "question mark");
+    emptylist[LPARENTHESIS] =   new_Symbol('(', LPARENTHESIS, "left parenthesis");
+    emptylist[RPARENTHESIS] =   new_Symbol(')', RPARENTHESIS, "right parenthesis");
+
+
+    return;
 }
 
-char* classtr(unsigned int c, char* str)
+DICTIONARY new_dictionary(void)
 {
-    char* classes[] = {
-        "inexistent", 
-        "noun", 
-        "verb", 
-        "adjective",
-        "pronoun",
-        "article", 
-        "adverb", 
-        "conjunction", 
-        "preposition", 
-        "numeral", 
-        "symbol"
-    };
 
-    str[0] = '\0';
-    for (int i = 0; i < (sizeof classes / sizeof (char*)); i++)
-    {
-       if ((c >> i & 1))
-       {
-         cat(str, classes[i]);  
-       }
-    }
-    return str; 
 
-}
+    WORD* words = new_word(NULL);
+    DICTIONARY d = {.words=words}; 
+    symbollist(d.symbols);
+
+    add_file(words, "data/nouns/nouns.txt", NOUN);
+    add_file(words, "data/verbs/verbs.txt", VERB); 
+    add_file(words, "data/adjectives/adjectives.txt", ADJECTIVE);
+    add_file(words, "data/adverbs/adverbs.txt", ADVERB); 
+    add_file(words, "data/articles/articles.txt", ARTICLE);
+    add_file(words, "data/pronouns/pronouns.txt", PRONOUN);
+    add_file(words, "data/conjunctions/conjunctions.txt", CONJUNCTION);
+    add_file(words, "data/prepositions/prepositions.txt", PREPOSITION); 
+
+    return d; 
+} 

@@ -82864,6 +82864,8 @@ texases
 text
 textbook
 textbooks
+textfile
+textfiles 
 textile
 textiles
 texts

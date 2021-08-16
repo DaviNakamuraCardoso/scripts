@@ -12,9 +12,12 @@ int main(int argc, const char** argv)
         filename = argv[1];
     }
 
-    WORD* dictionary = new_dictionary(); 
+    DICTIONARY dictionary = new_dictionary(); 
     
     TOKEN** tokens = tokenize(dictionary, filename);
+
+    for (int i = 1; i < tokens[0]; i++) printtoken(tokens[i]);
+
     return 0; 
 }
 

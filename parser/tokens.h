@@ -1,6 +1,7 @@
 
 
-#define WORDSIZE 27
+#define WORDSIZE 27 
+#define SYMBOLSIZE 10 
 
 enum wordclass {
     INEXISTENT      =       1,
@@ -16,19 +17,45 @@ enum wordclass {
     SYMBOL          =       1024
 };
 
+enum symbol {
+    COMMA           ,
+    DOT             ,
+    EXCLAMATION     ,
+    QUESTION        ,
+    SEMICOLON       ,
+    COLON           , 
+    LPARENTHESIS    ,
+    RPARENTHESIS    
+};  
+
+
+
 
 typedef struct _words {
     struct _words *next[WORDSIZE];
+    struct _words *parent;
     unsigned int class;
+    char* word; 
 } WORD;
 
-WORD* new_word(void);
+typedef struct _symbol {
+    enum symbol type; 
+    char ascii;
+    char* str; 
+} Symbol;
+
+typedef struct _dictionary {
+    WORD* words;
+    Symbol* symbols[SYMBOLSIZE]; 
+} DICTIONARY;
+
+
+WORD* new_word(WORD* parent);
 void add_word(WORD* root, char* word, enum wordclass class);
 void add_file(WORD* dictionary, const char* filename, enum wordclass class);
 
-unsigned int search_word(WORD* root, char* word);
-WORD* new_dictionary(void); 
+WORD* search_word(DICTIONARY d, char* word);
+DICTIONARY new_dictionary(void); 
 
 char* classtr(unsigned int c, char *str); 
 
-unsigned int issym(char c); 
