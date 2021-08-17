@@ -99,6 +99,9 @@ void symbollist(Symbol** emptylist)
     emptylist[QUESTION] =       new_Symbol('?', QUESTION, "question mark");
     emptylist[LPARENTHESIS] =   new_Symbol('(', LPARENTHESIS, "left parenthesis");
     emptylist[RPARENTHESIS] =   new_Symbol(')', RPARENTHESIS, "right parenthesis");
+    emptylist[DASH]         =   new_Symbol('-', DASH, "dash");
+    emptylist[SINGLEQUOTE]  =   new_Symbol(39, SINGLEQUOTE, "single quote");
+    emptylist[DOUBLEQUOTE]  =   new_Symbol('"', DOUBLEQUOTE, "double quote");
 
 
     return;

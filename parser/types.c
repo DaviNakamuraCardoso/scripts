@@ -15,6 +15,10 @@ enum symbol symboltype(char c)
         case '?': return QUESTION;
         case '(': return LPARENTHESIS; 
         case ')': return RPARENTHESIS;
+        case '-': return DASH; 
+        case 39: return SINGLEQUOTE;
+        case '"': return DOUBLEQUOTE;
+
     }
 
     return -1; 
@@ -32,6 +36,9 @@ unsigned int issym(char c)
         case ';': 
         case '(': 
         case ')': 
+        case '-':
+        case 39:
+        case '"':
             return 1; 
     }
     return 0;

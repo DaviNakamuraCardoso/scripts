@@ -1,7 +1,7 @@
 
 
 #define WORDSIZE 27 
-#define SYMBOLSIZE 10 
+#define SYMBOLSIZE 11 
 
 enum wordclass {
     INEXISTENT      =       1,
@@ -25,7 +25,10 @@ enum symbol {
     SEMICOLON       ,
     COLON           , 
     LPARENTHESIS    ,
-    RPARENTHESIS    
+    RPARENTHESIS    ,
+    DASH, 
+    SINGLEQUOTE,
+    DOUBLEQUOTE
 };  
 
 

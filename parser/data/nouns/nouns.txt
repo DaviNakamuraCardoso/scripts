@@ -1378,6 +1378,7 @@ Byron
 Byzantine
 Byzantinism
 Byzantium
+C
 Caaba
 Cabot
 Cadillac
@@ -4428,6 +4429,7 @@ Kenyans
 Kenyatta
 Kepler
 Kerala
+Kernighan
 Kermit
 Kerouac
 Kerry
@@ -6941,6 +6943,7 @@ Ripon
 Ripuarian
 Riss
 Rita
+Ritchie
 Ritz
 Ritzes
 Rivera
@@ -7124,6 +7127,7 @@ Ryder
 SNOBOL
 STOL
 STOLs
+s
 Saar
 Saba
 Sabaean
@@ -8290,6 +8294,7 @@ Undset
 Uniat
 Unitarian
 Unitarians
+Unix
 Upanishad
 Upanishads
 Updike

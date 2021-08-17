@@ -1,0 +1,8 @@
+
+Brian Wilson Kernighan is a Canadian computer scientist.
+
+He worked at Bell Labs and contributed to the development of Unix alongside Unix creators Ken Thompson and Dennis Ritchie. Kernighan's name became widely known through co-authorship of the first book on the C programming language (The C Programming Language) with Dennis Ritchie. Kernighan affirmed that he had no part in the design of the C language ("it's entirely Dennis Ritchie's work"). He authored many Unix programs, including ditroff. Kernighan is coauthor of the AWK and AMPL programming languages. The "K" of K&R C and the "K" in AWK both stand for "Kernighan".
+
+In collaboration with Shen Lin he devised well-known heuristics for two NP-complete optimization problems: graph partitioning and the travelling salesman problem. In a display of authorial equity, the former is usually called the Kernighan–Lin algorithm, while the latter is known as the Lin–Kernighan heuristic.
+
+Kernighan has been a Professor of Computer Science at Princeton University since 2000 and is the Director of Undergraduate Studies in the Department of Computer Science. In 2015, he co-authored the book The Go Programming Language.

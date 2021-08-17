@@ -1,5 +1,5 @@
 
-CC = gcc 
+CC = clang 
 FLAGS = -Wall -Ofast 
 
 %.o: %.c

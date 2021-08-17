@@ -13,7 +13,6 @@ int main(int argc, const char** argv)
     }
 
     DICTIONARY dictionary = new_dictionary(); 
-    
     TOKEN** tokens = tokenize(dictionary, filename);
 
     for (int i = 1; i < tokens[0]; i++) printtoken(tokens[i]);
