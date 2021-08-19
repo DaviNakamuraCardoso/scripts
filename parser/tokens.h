@@ -14,7 +14,8 @@ enum wordclass {
     CONJUNCTION     =       128, 
     PREPOSITION     =       256, 
     NUMERAL         =       512, 
-    SYMBOL          =       1024
+    SYMBOL          =       1024, 
+    BIBLECHAPTER    =       2048
 };
 
 enum symbol {
@@ -26,8 +27,8 @@ enum symbol {
     COLON           , 
     LPARENTHESIS    ,
     RPARENTHESIS    ,
-    DASH, 
-    SINGLEQUOTE,
+    DASH            , 
+    SINGLEQUOTE     ,
     DOUBLEQUOTE
 };  
 

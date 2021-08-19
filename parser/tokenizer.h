@@ -3,7 +3,8 @@
 enum tokentype {
     __WORD,
     __SYMBOL,
-    __NUMERAL
+    __NUMERAL, 
+    __CHAPTER
 }; 
         
 
@@ -13,6 +14,7 @@ typedef struct _token {
         WORD* word;
         Symbol* symbol;
         double number; 
+        char* content; 
     };
 
 

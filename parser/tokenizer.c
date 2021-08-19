@@ -33,6 +33,14 @@ TOKEN* new_symbolt(DICTIONARY d, char* word)
     return t; 
 }
 
+TOKEN* new_chaptert(DICTIONARY d, char* word)
+{
+    TOKEN* t = malloc(sizeof(TOKEN));
+    t->type = __CHAPTER;
+    t->content = strdup(word);
+    return t; 
+}
+
 static unsigned int isnewline(char c)
 {
     return c == '\n'; 
@@ -60,6 +68,18 @@ int getword(char* phrase, int index, char* buff)
 
 }
 
+static unsigned int ischapter(char* word)
+{
+    int i = 0;
+    char* c = NULL; 
+    for (;isalpha(word[i]) && word[i]!='\0';i++) { }
+    if (i < 2) return 0; 
+    for (c = word+i; *c != '\0'; c++) { if (!isdigit(*c)) return 0; } 
+    if (c - word <= i) return 0;  
+
+    return 1; 
+}
+
 TOKEN** tokenize(DICTIONARY dictionary, const char* filename)
 {
     FILE* f = fopen(filename, "r");
@@ -67,11 +87,13 @@ TOKEN** tokenize(DICTIONARY dictionary, const char* filename)
     char buffer[300];
     unsigned long counter = 1; 
 
+    
 
     inline enum tokentype wordtype(char* word)
     {
         if (isnumeral(word)) return __NUMERAL;
         if (issym(*word)) return __SYMBOL;
+        if (ischapter(word)) return __CHAPTER;
 
         return __WORD; 
     }
@@ -81,7 +103,8 @@ TOKEN** tokenize(DICTIONARY dictionary, const char* filename)
         TOKEN* (*constructors[]) (DICTIONARY, char*) = {
             new_wordt, 
             new_symbolt, 
-            new_numeralt 
+            new_numeralt, 
+            new_chaptert
         };
 
         tokens[counter++] = constructors[wordtype(word)](dictionary, word);
@@ -149,14 +172,19 @@ void printtoken(TOKEN* t)
 
     inline void printnumeral(TOKEN* token)
     {
-        printf("%f => numeral\n", token->number);
+        printf("%.0f => numeral\n", token->number);
     }
 
+    inline void printchapter(TOKEN* token)
+    {
+        printf("%s => chapter\n", token->content); 
+    }
 
     void (*printers[]) (TOKEN*) = {
         printword,
         printsymbol,
-        printnumeral
+        printnumeral, 
+        printchapter 
     };
 
     printers[t->type](t);
