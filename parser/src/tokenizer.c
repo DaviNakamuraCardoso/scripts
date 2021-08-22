@@ -2,16 +2,22 @@
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
-#include "types.h"
-#include "tokens.h"
-#include "tokenizer.h"
+#include <types.h>
 
 
 TOKEN* new_wordt(DICTIONARY d, char* word)
 {
     TOKEN* t = malloc(sizeof(TOKEN));
+    WORD* w = search_word(d, word);
+    if (w == NULL) 
+    {
+        t->type = __UNKNOWN; 
+        t->word = NULL; 
+        return t; 
+    }
+
     t->type = __WORD;
-    t->word = (WORD*) search_word(d, word); 
+    t->word = (WORD*) w; 
 
     return t; 
 }
@@ -41,6 +47,17 @@ TOKEN* new_chaptert(DICTIONARY d, char* word)
     return t; 
 }
 
+
+TOKEN* new_unknownt(DICTIONARY d, char* word)
+{
+    TOKEN* t = malloc(sizeof (TOKEN)); 
+    t->type = __UNKNOWN; 
+    t->content = strdup(word); 
+
+    return t; 
+}
+
+
 static unsigned int isnewline(char c)
 {
     return c == '\n'; 
@@ -68,21 +85,9 @@ int getword(char* phrase, int index, char* buff)
 
 }
 
-static unsigned int ischapter(char* word)
-{
-    int i = 0;
-    char* c = NULL; 
-    for (;isalpha(word[i]) && word[i]!='\0';i++) { }
-    if (i < 2) return 0; 
-    for (c = word+i; *c != '\0'; c++) { if (!isdigit(*c)) return 0; } 
-    if (c - word <= i) return 0;  
 
-    return 1; 
-}
-
-TOKEN** tokenize(DICTIONARY dictionary, const char* filename)
+TOKEN** tokenize(DICTIONARY dictionary, FILE* stream)
 {
-    FILE* f = fopen(filename, "r");
     TOKEN **tokens = calloc(sizeof(TOKEN*), 10000000);
     char buffer[300];
     unsigned long counter = 1; 
@@ -104,7 +109,8 @@ TOKEN** tokenize(DICTIONARY dictionary, const char* filename)
             new_wordt, 
             new_symbolt, 
             new_numeralt, 
-            new_chaptert
+            new_chaptert,
+            new_unknownt
         };
 
         tokens[counter++] = constructors[wordtype(word)](dictionary, word);
@@ -124,7 +130,7 @@ TOKEN** tokenize(DICTIONARY dictionary, const char* filename)
         return 0; 
     }
 
-    while (get_line(f, buffer) != NULL)
+    while (get_line(stream, buffer) != NULL)
     {
         searchwords(buffer); 
     }
@@ -152,42 +158,6 @@ char* get_line(FILE* f, char* buff)
     return NULL; 
 } 
 
-void printtoken(TOKEN* t)
-{
-    inline void printword(TOKEN* token)
-    {
-        if (token->word == NULL || token->word->class == INEXISTENT) 
-        {
-            printf("??? => unknown\n");
-            return;
-        }
-        char buff[200];
-        printf("%s => %s\n", token->word->word, classtr(token->word->class, buff)); 
-    }
 
-    inline void printsymbol(TOKEN* token)
-    {
-        printf("%c => %s\n", token->symbol->ascii, token->symbol->str);
-    }
-
-    inline void printnumeral(TOKEN* token)
-    {
-        printf("%.0f => numeral\n", token->number);
-    }
-
-    inline void printchapter(TOKEN* token)
-    {
-        printf("%s => chapter\n", token->content); 
-    }
-
-    void (*printers[]) (TOKEN*) = {
-        printword,
-        printsymbol,
-        printnumeral, 
-        printchapter 
-    };
-
-    printers[t->type](t);
-}
 
 

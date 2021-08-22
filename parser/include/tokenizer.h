@@ -4,7 +4,8 @@ enum tokentype {
     __WORD,
     __SYMBOL,
     __NUMERAL, 
-    __CHAPTER
+    __CHAPTER, 
+    __UNKNOWN 
 }; 
         
 
@@ -23,5 +24,4 @@ typedef struct _token {
 char* get_line(FILE* f, char* buff); 
 int getwords(char* buff); 
 int getword(char* phrase, int index, char* buff); 
-TOKEN** tokenize(DICTIONARY dictionary, const char* filename);  
-void printtoken(TOKEN* t); 
+TOKEN** tokenize(DICTIONARY dictionary, FILE* stream);  

@@ -2,16 +2,9 @@
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
-#include "types.h"
-#include "tokens.h"
-#include "tokenizer.h"
+#include <types.h>
 
-int ascii(char c)
-{ 
-    if (!isalpha(c)) return WORDSIZE-1; 
-    if (isupper(c)) return c - 'A';
-    return c - 'a'; 
-}
+static int ascii(char c); 
 
 WORD* new_word(WORD* parent)
 {
@@ -126,3 +119,10 @@ DICTIONARY new_dictionary(void)
 
     return d; 
 } 
+
+static int ascii(char c)
+{ 
+    if (!isalpha(c)) return WORDSIZE-1; 
+    if (isupper(c)) return c - 'A';
+    return c - 'a'; 
+}

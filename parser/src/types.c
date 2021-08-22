@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
-#include "tokens.h"
+#include <types.h>
 
 
 enum symbol symboltype(char c)
@@ -95,3 +95,58 @@ char* classtr(unsigned int c, char* str)
 
 
 
+unsigned int ischapter(char* word)
+{
+    int i = 0;
+    char* c = NULL; 
+    for (;isalpha(word[i]) && word[i]!='\0';i++) { }
+    if (i < 2) return 0; 
+    for (c = word+i; *c != '\0'; c++) { if (!isdigit(*c)) return 0; } 
+    if (c - word <= i) return 0;  
+
+    return 1; 
+}
+
+void printtoken(TOKEN* t)
+{
+    inline void printword(TOKEN* token)
+    {
+        if (token->word == NULL || token->word->class == INEXISTENT) 
+        {
+            printf("??? => unknown\n");
+            return;
+        }
+        char buff[200];
+        printf("%s => %s\n", token->word->word, classtr(token->word->class, buff)); 
+    }
+
+    inline void printsymbol(TOKEN* token)
+    {
+        printf("%c => %s\n", token->symbol->ascii, token->symbol->str);
+    }
+
+    inline void printnumeral(TOKEN* token)
+    {
+        printf("%.0f => numeral\n", token->number);
+    }
+
+    inline void printchapter(TOKEN* token)
+    {
+        printf("%s => chapter\n", token->content); 
+    }
+
+    inline void printunknown(TOKEN* token)
+    {
+        printf("??? => unknown\n"); 
+    }
+
+    void (*printers[]) (TOKEN*) = {
+        printword,
+        printsymbol,
+        printnumeral, 
+        printchapter, 
+        printunknown
+    };
+
+    printers[t->type](t);
+}
