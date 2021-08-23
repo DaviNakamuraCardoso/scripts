@@ -2,6 +2,13 @@
 #include <stdlib.h>
 #include <tokens.h>
 
+
+static TOKEN* trymerge(TOKEN* first, TOKEN* last)
+{
+
+    return NULL;
+}
+
 TOKEN** defrag(TOKEN** tokens)
 {
     TOKEN** new = calloc(sizeof(TOKEN*), 1000000);
@@ -11,7 +18,11 @@ TOKEN** defrag(TOKEN** tokens)
     {
         if (tokens[j]->type == __UNKNOWN)
         {
-            
+            TOKEN* next = trymerge(tokens[i-1], tokens[i]);            
+            if (next == NULL)
+            {
+                next = trymerge(tokens[i], tokens[i+1]);
+            }
         }
         
 
@@ -21,5 +32,6 @@ TOKEN** defrag(TOKEN** tokens)
     return new; 
 
 }
+
 
 

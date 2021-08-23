@@ -7,7 +7,7 @@ I = ./include/
 O = ./obj/
 S = ./src/
 
-SRC = main types tokenizer tokens error
+SRC = main types tokenizer tokens error defrag
 OBJF = $(foreach obj, $(SRC), $(addprefix $(O), $(obj)))
 OBJ = $(foreach obj, $(OBJF), $(addsuffix .o, $(obj)))
 
