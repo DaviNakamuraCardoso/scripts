@@ -9,10 +9,11 @@ TOKEN* new_wordt(DICTIONARY d, char* word)
 {
     TOKEN* t = malloc(sizeof(TOKEN));
     WORD* w = search_word(d, word);
-    if (w == NULL) 
+    if (w == NULL || w->class == INEXISTENT) 
     {
         t->type = __UNKNOWN; 
-        t->word = NULL; 
+        t->content = strdup(word);
+        fprintf(stderr, "%s\n", t->content);
         return t; 
     }
 
@@ -89,7 +90,7 @@ int getword(char* phrase, int index, char* buff)
 TOKEN** tokenize(DICTIONARY dictionary, FILE* stream)
 {
     TOKEN **tokens = calloc(sizeof(TOKEN*), 10000000);
-    char buffer[300];
+    char buffer[400];
     unsigned long counter = 1; 
 
     
@@ -133,6 +134,7 @@ TOKEN** tokenize(DICTIONARY dictionary, FILE* stream)
     while (get_line(stream, buffer) != NULL)
     {
         searchwords(buffer); 
+        buffer[0] = '\0';
     }
     tokens[0] = counter; 
     return tokens;

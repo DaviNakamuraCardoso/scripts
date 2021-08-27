@@ -10,12 +10,12 @@ enum tokentype {
         
 
 typedef struct _token {
-    unsigned int type:2;
+    unsigned int type:4;
     union {
+        char* content; 
         WORD* word;
         Symbol* symbol;
         double number; 
-        char* content; 
     };
 
 

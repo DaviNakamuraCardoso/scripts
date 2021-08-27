@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <tokens.h>
+#include <tokenizer.h>
 
 
 static TOKEN* trymerge(TOKEN* first, TOKEN* last)

@@ -113,7 +113,7 @@ void printtoken(TOKEN* t)
     {
         if (token->word == NULL || token->word->class == INEXISTENT) 
         {
-            printf("??? => unknown\n");
+            printf("??? => unknown word\n");
             return;
         }
         char buff[200];
@@ -137,7 +137,7 @@ void printtoken(TOKEN* t)
 
     inline void printunknown(TOKEN* token)
     {
-        printf("??? => unknown\n"); 
+        printf("%s=> unknown\n", token->content); 
     }
 
     void (*printers[]) (TOKEN*) = {
