@@ -2,35 +2,22 @@
 #include <stdlib.h>
 #include <tokens.h>
 #include <tokenizer.h>
+#include <list.h>
 
 
-static TOKEN* trymerge(TOKEN* first, TOKEN* last)
+static TOKEN* mergetokens(TOKEN* first, TOKEN* last)
 {
-
     return NULL;
 }
 
-TOKEN** defrag(TOKEN** tokens)
+
+
+List* defrag(TOKEN** tokens)
 {
-    TOKEN** new = calloc(sizeof(TOKEN*), 1000000);
+    List* l = new_list(); 
 
-    int i = 1, j = 1; 
-    for (; i < tokens[0]; i++, j++)
-    {
-        if (tokens[j]->type == __UNKNOWN)
-        {
-            TOKEN* next = trymerge(tokens[i-1], tokens[i]);            
-            if (next == NULL)
-            {
-                next = trymerge(tokens[i], tokens[i+1]);
-            }
-        }
-        
 
-        new[i] = tokens[j]; 
-    }
-
-    return new; 
+    return l; 
 
 }
 

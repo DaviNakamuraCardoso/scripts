@@ -24,7 +24,7 @@ grammar Camelish {
     rule subject { <art>? <name>}; 
     rule object { <art>? <comp>? [<noun><sep>?]* }; 
     rule comp { [<adj> ]* }; 
-    rule name { <noun> [ <noun>]* };
+    rule name { <noun>* };
 }
 
 say Camelish.parse: "Brian Kernighan likes C. "; 

@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <tokens.h>
 #include <tokenizer.h>
+#include <list.h>
 #include <error.h>
 
 int main(int argc, const char** argv)
@@ -16,9 +17,9 @@ int main(int argc, const char** argv)
 
 
     DICTIONARY dictionary = new_dictionary(); 
-    TOKEN** tokens = tokenize(dictionary, stream);
+    List* tokens = tokenize(dictionary, stream);
 
-    for (int i = 1; i < tokens[0]; i++) printtoken(tokens[i]);
+    for (int i = 0; i < listlength(tokens); i++) printtoken(getelement(tokens, i));
 
     return 0; 
 }

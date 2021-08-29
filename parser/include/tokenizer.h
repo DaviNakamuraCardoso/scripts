@@ -1,5 +1,10 @@
 
 
+#ifndef __LISTH
+#define __LISTH
+#include <list.h>
+#endif 
+
 enum tokentype {
     __WORD,
     __SYMBOL,
@@ -24,4 +29,4 @@ typedef struct _token {
 char* get_line(FILE* f, char* buff); 
 int getwords(char* buff); 
 int getword(char* phrase, int index, char* buff); 
-TOKEN** tokenize(DICTIONARY dictionary, FILE* stream);  
+List* tokenize(DICTIONARY dictionary, FILE* stream);  

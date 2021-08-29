@@ -6,7 +6,7 @@
 
 
 TOKEN* new_wordt(DICTIONARY d, char* word)
-{
+{    
     TOKEN* t = malloc(sizeof(TOKEN));
     WORD* w = search_word(d, word);
     if (w == NULL || w->class == INEXISTENT) 
@@ -15,6 +15,7 @@ TOKEN* new_wordt(DICTIONARY d, char* word)
         t->content = strdup(word);
         fprintf(stderr, "%s\n", t->content);
         return t; 
+       
     }
 
     t->type = __WORD;
@@ -87,9 +88,9 @@ int getword(char* phrase, int index, char* buff)
 }
 
 
-TOKEN** tokenize(DICTIONARY dictionary, FILE* stream)
+List* tokenize(DICTIONARY dictionary, FILE* stream)
 {
-    TOKEN **tokens = calloc(sizeof(TOKEN*), 10000000);
+    List* l = new_list(); 
     char buffer[400];
     unsigned long counter = 1; 
 
@@ -114,7 +115,7 @@ TOKEN** tokenize(DICTIONARY dictionary, FILE* stream)
             new_unknownt
         };
 
-        tokens[counter++] = constructors[wordtype(word)](dictionary, word);
+        addl(l, constructors[wordtype(word)](dictionary, word)); 
 
         return 0;
     }
@@ -136,8 +137,7 @@ TOKEN** tokenize(DICTIONARY dictionary, FILE* stream)
         searchwords(buffer); 
         buffer[0] = '\0';
     }
-    tokens[0] = counter; 
-    return tokens;
+    return l;
 
 }
 
