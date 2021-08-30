@@ -99,6 +99,7 @@ unsigned int ischapter(char* word)
 {
     int i = 0;
     char* c = NULL; 
+    if (isdigit(*word)) i++;
     for (;isalpha(word[i]) && word[i]!='\0';i++) { }
     if (i < 2) return 0; 
     for (c = word+i; *c != '\0'; c++) { if (!isdigit(*c)) return 0; } 
@@ -137,7 +138,7 @@ void printtoken(TOKEN* t)
 
     inline void printunknown(TOKEN* token)
     {
-        printf("%s=> unknown\n", token->content); 
+        fprintf(stderr, "%s => UNKNOWN\n", token->content); 
     }
 
     void (*printers[]) (TOKEN*) = {
@@ -149,4 +150,26 @@ void printtoken(TOKEN* t)
     };
 
     printers[t->type](t);
+}
+
+
+const char* tokenstr(TOKEN* t) 
+{
+    inline const char* strword(TOKEN* tk) { return tk->word->word; }
+    inline const char* strsymbol(TOKEN* tk) { return "S"; }
+    inline const char* strnumeral(TOKEN* tk) { return "D";}
+    inline const char* strchapter(TOKEN* tk) { return "C"; }
+    inline const char* strunknown(TOKEN* tk) { return tk->content; } 
+
+    const char* (*str[]) (TOKEN*) = {
+       strword, 
+       strsymbol,
+       strnumeral,
+       strchapter,
+       strunknown
+    }; 
+    
+    const char* r = (char*) str[t->type](t);
+
+    return r; 
 }

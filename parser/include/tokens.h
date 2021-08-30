@@ -39,7 +39,7 @@ typedef struct _words {
     struct _words *next[WORDSIZE];
     struct _words *parent;
     unsigned int class;
-    char* word; 
+    const char* word; 
 } WORD;
 
 typedef struct _symbol {
@@ -52,6 +52,8 @@ typedef struct _dictionary {
     WORD* words;
     Symbol* symbols[SYMBOLSIZE]; 
 } DICTIONARY;
+
+typedef struct _dictionary Dictionary; 
 
 
 WORD* new_word(WORD* parent);

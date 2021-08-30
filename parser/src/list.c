@@ -33,6 +33,16 @@ List* new_list(void)
     return l; 
 
 }
+void increasel(List* l)
+{
+    
+    l->contents = reallocarray(
+            l->contents, 
+            LIST_SIZES[++l->maxsizei], 
+            sizeof(TOKEN*)
+            );
+    return;
+}
 
 
 void addl(List* l, void* t)
@@ -50,13 +60,6 @@ void addl(List* l, void* t)
 }
 
 
-void increasel(List* l)
-{
-    
-    l->contents = reallocarray(l->contents, LIST_SIZES[++l->maxsizei], sizeof(TOKEN*));
-    return;
-}
-
 unsigned long listlength(List* l)
 {
     return l->elems;
@@ -66,6 +69,13 @@ void* getelement(List* l, unsigned long index)
 {
     return l->contents[index];
 }
+
+const void* popl(List* l)
+{
+    if (l->elems == 0){ return NULL;}
+    return (TOKEN*) l->contents[--(l->elems)];
+}
+
 
 void testlist(void)
 {
@@ -78,7 +88,7 @@ void testlist(void)
         if (l->contents[i] != NULL) break;
     }
 
-    return;
+   return;
 }
 
 

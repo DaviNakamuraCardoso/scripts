@@ -1,4 +1,5 @@
 he
+thy
 him
 his
 she
@@ -30,12 +31,19 @@ y'all
 theirs
 who
 whose
+whom
 which
 I
 me
 oneself
+himself
+herself
 themself
+themselves
+yourselves
+yourself
 itself
 hers
 mine
+burneth
 

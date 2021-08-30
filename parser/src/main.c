@@ -15,11 +15,11 @@ int main(int argc, const char** argv)
         if (stream == NULL) error("File %s doesn't exist!", argv[1]); 
     }
 
+    Dictionary d = new_dictionary(); 
+    List* tokens = tokenize(d, stream);
 
-    DICTIONARY dictionary = new_dictionary(); 
-    List* tokens = tokenize(dictionary, stream);
-
-    for (int i = 0; i < listlength(tokens); i++) printtoken(getelement(tokens, i));
+    for (int i = 0; i < listlength(tokens); i++) 
+        printtoken(getelement(tokens, i));
 
     return 0; 
 }

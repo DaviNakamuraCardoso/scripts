@@ -7,6 +7,8 @@ since
 while
 during
 above
+against
+than
 around
 behind
 below
@@ -41,3 +43,6 @@ with
 unto
 amongst
 upon
+among
+happened
+

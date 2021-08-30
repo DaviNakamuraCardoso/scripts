@@ -3,6 +3,7 @@
 #include <string.h>
 #include <ctype.h>
 #include <types.h>
+#include <defrag.h>
 
 
 TOKEN* new_wordt(DICTIONARY d, char* word)
@@ -13,7 +14,6 @@ TOKEN* new_wordt(DICTIONARY d, char* word)
     {
         t->type = __UNKNOWN; 
         t->content = strdup(word);
-        fprintf(stderr, "%s\n", t->content);
         return t; 
        
     }
@@ -81,7 +81,8 @@ int getword(char* phrase, int index, char* buff)
     if (i == index)
     {
         if (issym(phrase[i])) { buff[0] = phrase[i++]; buff[1] = '\0'; }
-        for (; !isalnum(phrase[i]) && !issym(phrase[i]) && phrase[i] != '\0'; i++){}
+        for (; !isalnum(phrase[i]) && 
+                !issym(phrase[i]) && phrase[i] != '\0'; i++){}
     }
     return i-1;
 
@@ -93,8 +94,6 @@ List* tokenize(DICTIONARY dictionary, FILE* stream)
     List* l = new_list(); 
     char buffer[400];
     unsigned long counter = 1; 
-
-    
 
     inline enum tokentype wordtype(char* word)
     {
@@ -115,7 +114,7 @@ List* tokenize(DICTIONARY dictionary, FILE* stream)
             new_unknownt
         };
 
-        addl(l, constructors[wordtype(word)](dictionary, word)); 
+        addt(dictionary, l, constructors[wordtype(word)](dictionary, word)); 
 
         return 0;
     }
@@ -126,7 +125,6 @@ List* tokenize(DICTIONARY dictionary, FILE* stream)
         {
             char word[200]; 
             i = getword(buff, i, word);
-            if (*word == '\0') { i++; continue; } 
             generatetoken(word);     
         }
         return 0; 

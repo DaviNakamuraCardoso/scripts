@@ -11,4 +11,5 @@ unsigned int ischapter(char* word);
 char* classtr(unsigned int c, char* str); 
 enum symbol symboltype(char c);
 void printtoken(TOKEN* t);  
+const char* tokenstr(TOKEN* t); 
 
