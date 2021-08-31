@@ -16,4 +16,8 @@ my ($good, $bad, $ugly) = split(/,/, "vi,emacs,teco");
 
 say $good; say $bad; say $ugly;
 
+while (<STDIN>)
+{
+    print if /http(s)?/; 
+}
 
