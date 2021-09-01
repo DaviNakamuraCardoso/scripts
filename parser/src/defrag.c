@@ -36,7 +36,6 @@ static TOKEN* mergetokens(Dictionary d, TOKEN* first, TOKEN* last)
 
     strcpy(buff, tokenstr(first));
     strcat(buff, tokenstr(last));
-    printf("Trying %s\n", buff);
 
     w = search_word(d, buff);
     
@@ -69,12 +68,7 @@ void addt(Dictionary d, List* l, TOKEN* new)
     {
         t = mergetokens(d, previous, new);
 
-        if (t == NULL)
-        {
-            if (iscapitalized(previous->content))
-                previous = nounh(previous);
-            goto end; 
-        }
+        if (t == NULL) goto end; 
 
         addl(l, t);
         return;
@@ -83,13 +77,7 @@ void addt(Dictionary d, List* l, TOKEN* new)
     if (new->type == __UNKNOWN)
     {
         t = mergetokens(d, previous, new);
-        if (t == NULL) 
-        {
-            if (iscapitalized(new->content))
-                new = nounh(new);
-
-            goto end; 
-        }
+        if (t == NULL) goto end; 
         addl(l, t);
         return;
     }

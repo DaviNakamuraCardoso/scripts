@@ -6,6 +6,9 @@
 #include <defrag.h>
 
 
+#define LINESIZE 2000
+
+
 TOKEN* new_wordt(DICTIONARY d, char* word)
 {    
     TOKEN* t = malloc(sizeof(TOKEN));
@@ -62,7 +65,7 @@ TOKEN* new_unknownt(DICTIONARY d, char* word)
 
 static unsigned int isnewline(char c)
 {
-    return c == '\n'; 
+    return c == '\n' || c == '\r'; 
 }
 
 
@@ -92,7 +95,7 @@ int getword(char* phrase, int index, char* buff)
 List* tokenize(DICTIONARY dictionary, FILE* stream)
 {
     List* l = new_list(); 
-    char buffer[400];
+    char buffer[LINESIZE];
     unsigned long counter = 1; 
 
     inline enum tokentype wordtype(char* word)
@@ -104,7 +107,7 @@ List* tokenize(DICTIONARY dictionary, FILE* stream)
         return __WORD; 
     }
         
-    inline int generatetoken(char* word)
+    inline int generatetoken(char* word, int wc)
     {
         TOKEN* (*constructors[]) (DICTIONARY, char*) = {
             new_wordt, 
@@ -113,19 +116,26 @@ List* tokenize(DICTIONARY dictionary, FILE* stream)
             new_chaptert,
             new_unknownt
         };
+        TOKEN *tk = constructors[wordtype(word)](dictionary, word);
 
-        addt(dictionary, l, constructors[wordtype(word)](dictionary, word)); 
+        if (wc == 0)
+            addt(dictionary, l, tk); 
+        else 
+            addl(l, tk);
 
         return 0;
     }
 
     inline int searchwords(char* buff)
     {
+        int words = 0, oi = 0; 
         for (int i = 0; buff[i] != '\0'; i++)
         {
-            char word[200]; 
+            char word[300]; 
+            oi = i;
             i = getword(buff, i, word);
-            generatetoken(word);     
+            generatetoken(word, words);     
+            if (oi != i) words++;
         }
         return 0; 
     }
@@ -135,6 +145,9 @@ List* tokenize(DICTIONARY dictionary, FILE* stream)
         searchwords(buffer); 
         buffer[0] = '\0';
     }
+
+    searchwords(buffer);
+
     return l;
 
 }
@@ -144,7 +157,7 @@ char* get_line(FILE* f, char* buff)
 {
     int i = 0; 
     char c; 
-    for (; (c = fgetc(f)) != EOF; i++)
+    for (; (c = fgetc(f)) != EOF && i < LINESIZE; i++)
     {
         if (isnewline(c))
         {
