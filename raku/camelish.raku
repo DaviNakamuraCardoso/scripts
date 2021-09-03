@@ -19,15 +19,14 @@ grammar Camelish {
     token art { :i"the" | :i"a" }; 
 
     # Rules 
-    rule TOP { [<phrase> ]+ }; 
+    rule TOP { [<phrase>"." ]+ }; 
     rule phrase { <subject><verb><object>"."}
-    rule subject { <art>? <name>}; 
+    rule subject { <art>? <noun>}; 
     rule object { <art>? <comp>? [<noun><sep>?]* }; 
     rule comp { [<adj> ]* }; 
-    rule name { <noun>* };
 }
 
-say Camelish.parse: "Brian Kernighan likes C. "; 
+say Camelish.parse: "Brian likes C. "; 
 
 
 
