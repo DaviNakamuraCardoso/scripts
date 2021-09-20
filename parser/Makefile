@@ -2,20 +2,25 @@
 CC = gcc 
 FLAGS = -Wall 
 
-
 I = ./include/
 O = ./obj/
 S = ./src/
 
-SRC = main types tokenizer tokens error defrag list
-OBJF = $(foreach obj, $(SRC), $(addprefix $(O), $(obj)))
+T = tokenizer/
+
+
+TOKENIZER = types tokenizer tokens error defrag list
+TKN = $(foreach src, $(TOKENIZER), $(addprefix $(T), $(src)))
+
+OBJECTS = $(TKN) main
+OBJF = $(foreach obj, $(OBJECTS), $(addprefix $(O), $(obj)))
 OBJ = $(foreach obj, $(OBJF), $(addsuffix .o, $(obj)))
 
 ./obj/%.o: ./src/%.c
-	$(CC) -I $(I) $(L) $(FLAGS) -c $^ -o $@ 
+	$(CC) -I $(I) $(FLAGS) -c $^ -o $@ 
 
 parser: $(OBJ) 
 	$(CC) $(FLAGS) $^ -o $@
 
 clean:
-	rm $(O)*.o
+	rm $(OBJ) 

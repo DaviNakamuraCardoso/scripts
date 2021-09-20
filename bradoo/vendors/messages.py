@@ -1,6 +1,10 @@
 NOT_POST = {
-    "message": "Method should be POST."
+    "message": "Method must be POST."
 }
+
+NOT_GET = {
+    "message": "Method must be GET."
+    }
 
 INVALID_CNPJ = {
     "message": "Invalid CNPJ",
