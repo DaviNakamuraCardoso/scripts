@@ -1,52 +1,129 @@
 #! /usr/bin/rakudo
 
 # Loops searching for songs
+#
 
-subset pat of Str; 
+use Text::CSV;
 
 sub MAIN (
-    Str :$grep = "", #= Pattern in name 
-    Bool :$remove = False
+    Str     :$path = "$*HOME/Music",
+    Str     :$grep = "", #= Pattern in name
+    Str     :$move = "" , #= Destination path to move songs
+    Bool    :$csv = False,  #= Print in CSV format
+    Bool    :$remove = False #= Starts remove routine
 ) returns int
 {
-    my IO::Path @list = listall;  
-    my IO::Path @matches = @list.grep({ .Str.contains: $grep; }); 
+    my IO::Path @list = listall($path);
+    my IO::Path @matches = @list.grep({ .Str.contains: $grep; });
+
+    if ($csv)  
+    { 
+        echosongs(@matches);
+        exit; 
+    }
 
     loop (my int $i = 0; $i < @matches.elems; $i++) { say "($i) @matches[$i]"; }
-    
-    if ($remove) {
-        for lines() {
-            given ($_)
-            {
-                when "q" { exit; }
-                when "a" { for @matches -> $match { $match.unlink; } }
-                default {   
 
-                    say "Removing " ~ $_.Int; 
-                    @matches[$_.Int].unlink;
-                }
-            }
-        }
-    } 
-    
-    return 0; 
+    my &handler;
+    my $info = "";
+    if ($remove) { &handler = &deletematch; }
+    unless ($move eq "") { &handler = &movematch; $info = $move; }
+
+    if (&handler) { commandhandler(@matches, &handler, $info);}
+
+    return 0;
 }
 
-my sub listall($dir = "$*HOME/Music") returns Array[IO::Path]
+my sub commandhandler(
+    IO::Path @matches,
+    int &handler,
+    Str $info
+) returns int
+{
+    for lines() {
+        given ($_)
+        {
+            when "q" { exit; }
+            when "a" { for @matches -> $match { &handler($match, $info); } }
+            default {
+                &handler(@matches[$_.Int], $info);
+            }
+        }
+    }
+
+}
+
+my sub deletematch(IO::Path $match, Str $info) returns int
+{
+    say "Removing {$match.basename}";
+    $match.unlink;
+    return 0;
+}
+
+my sub movematch(IO::Path $match, Str $info) returns int
+{
+    my $filename = $match.basename;
+    my IO::Path $path = IO::Path.new("$*HOME/Music/$info/");
+
+    # Check if the path exists
+    unless ($path.e)
+    {
+        mkdir($path);
+        say "Creating path $path";
+    }
+    say "Moving $filename to $path";
+    unless ($match eq $path.add($filename))
+    {
+        $match.move($path.add($filename));
+    }
+    return 0;
+
+}
+
+my sub listall($dir) returns Array[IO::Path]
 {
     my @dirents = $dir.IO;
-    my IO::Path @songs = (); 
+    my IO::Path @songs = ();
 
     while (@dirents)
     {
-        for (@dirents.pop.dir) -> $path 
+        for (@dirents.pop.dir) -> $path
         {
             @songs.push: $path if ($path.extension eq "mp3");
             @dirents.push: $path if $path.d;
         }
     }
 
-    return @songs;  
+    return @songs;
 }
 
 
+my sub echosongs(IO::Path @songs)
+{
+    my $csv = Text::CSV.new; my $io  = open "$*HOME/.dmus/queue.csv", :r, chomp => False;
+    my @data = $csv.getline_all($io);
+
+    my Bool %paths;
+    for @data -> @line { 
+        my IO::Path $song = IO::Path.new(@line[0]);
+        %paths{$song.basename} = (@line[1]).Int.Bool
+    }
+
+    close $io;
+
+    my $file = open "$*HOME/.dmus/queue.csv", :w;
+
+    for @songs -> $song {
+        
+        if (%paths{$song.basename}) {
+            $file.say: "\"$song\",1";
+        } else {
+            $file.say: "\"$song\",0";
+        }
+    
+    }
+
+    close $file;
+
+
+}
