@@ -1,4 +1,8 @@
 use Lingua::Romana::Perligata;
 
-scribe egresso dictum sic Hello World! cis.
+meo varo da IV. 
+meo varum novo da.
+da meo nextis I tum II.
 
+
+next tum is inquementum tum lacunam tum nexta tum novumversum oraculo scribe.  
