@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Hello </title> 
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+
+        <h1>Death Star</h1>
+        <h2>100%</h2>
+
+
+        <img src="star.png"/>
+        <div style="text-align:center;">
+            <canvas>
+            </canvas>
+        </div>
+
+        <script src="script.js">
+
+                    </script>
+    </body>
+    
+</html>
