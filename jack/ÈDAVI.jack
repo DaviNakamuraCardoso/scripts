@@ -1,0 +1,18 @@
+class Main {
+
+    function int main() {
+        var File f;
+        var int i;
+        let f = File.open("davi.txt", "w");
+
+        let i = 0;
+        while (i < 1000) {
+            do f.printf("DAVI %i\n", i);
+            let i = i + 1;
+        }
+
+        do f.close();
+        
+        return 0;
+    }   
+}

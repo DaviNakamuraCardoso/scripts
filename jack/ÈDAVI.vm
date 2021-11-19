@@ -1,0 +1,68 @@
+function Main.main 2
+push constant 8
+call String.new 1
+push constant 100
+call String.appendChar 2
+push constant 97
+call String.appendChar 2
+push constant 118
+call String.appendChar 2
+push constant 105
+call String.appendChar 2
+push constant 46
+call String.appendChar 2
+push constant 116
+call String.appendChar 2
+push constant 120
+call String.appendChar 2
+push constant 116
+call String.appendChar 2
+push constant 1
+call String.new 1
+push constant 119
+call String.appendChar 2
+call File.open 2
+pop local 0
+push constant 0
+pop local 1
+label LABEL_0
+push local 1
+push constant 1000
+lt
+not
+if-goto LABEL_1
+push local 0
+push constant 9
+call String.new 1
+push constant 68
+call String.appendChar 2
+push constant 65
+call String.appendChar 2
+push constant 86
+call String.appendChar 2
+push constant 73
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 37
+call String.appendChar 2
+push constant 105
+call String.appendChar 2
+push constant 92
+call String.appendChar 2
+push constant 110
+call String.appendChar 2
+push local 1
+call File.printf 3
+pop temp 0
+push local 1
+push constant 1
+add
+pop local 1
+goto LABEL_0
+label LABEL_1
+push local 0
+call File.close 1
+pop temp 0
+push constant 0
+return
