@@ -1,0 +1,23 @@
+     1                                  global _start
+     2                                  
+     3                                  section .data
+     4 00000000 48656C6C6F2C20576F-         hello db "Hello, World!", 0x0a
+     4 00000009 726C64210A         
+     5                                      len equ $ - hello
+     6                                  
+     7                                  section .text
+     8                                      mov     rax, 0x01
+     8          ******************       error: instruction not supported in 16-bit mode
+     9                                      mov     rdi, 0x01
+     9          ******************       error: instruction not supported in 16-bit mode
+    10                                      mov     rsi, hello
+    10          ******************       error: instruction not supported in 16-bit mode
+    11                                      mov     rdx, len
+    11          ******************       error: instruction not supported in 16-bit mode
+    12 00000000 0F05                        syscall
+    13                                  
+    14                                      mov rsi,    0x00
+    14          ******************       error: instruction not supported in 16-bit mode
+    15                                      mov rax,    0x3c
+    15          ******************       error: instruction not supported in 16-bit mode
+    16 00000002 0F05                        syscall
