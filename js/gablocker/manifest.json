@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "Gablocker",
+    "version": "1.0.0",
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["Content.js"]
+        }
+    ],
+    "browser_action" : {
+        "default_icon" : "./images/icon.svg"
+    },
+   "icons": {
+        "16": "./images/icon.svg",
+        "32": "./images/icon.svg",
+        "48": "./images/icon.svg",
+        "128":"./images/icon.svg"
+   }
+}
+    
+
