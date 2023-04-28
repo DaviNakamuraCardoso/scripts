@@ -11,21 +11,30 @@ const wills = [
 
 function main() {
 
-    if (!isBedtime()) return;
+    setWikiTrashProperIcon();
 
-    let body = document.querySelector("body"); 
-    let randomImage = wills[Math.floor(Math.random() * wills.length)]; 
-
-    body.style.backgroundImage = `url("${randomImage}")`;
-    body.style.height = "100%";
-    body.style.width = "100%";
-    body.style.position = "absolute";
-    body.innerHTML = ""; 
 }
 
 function isBedtime() { 
     let today = new Date();
     return today.getHours() >= 20;
+}
+
+function setWikiTrashProperIcon() {
+    if (!isWikiTrash()) return;
+
+    let wikiLogo = document.querySelector('.mw-wiki-logo');
+    let randomImage = wills[Math.floor(Math.random() * wills.length)]; 
+
+    wikiLogo.className = ''; 
+    wikiLogo.style.backgroundImage = `url("${randomImage}")`;
+
+    document.title = 'Lies';
+}
+
+
+function isWikiTrash() { 
+    return document.location.hostname.match('wikipedia.org') !== null;
 }
 
 main();
